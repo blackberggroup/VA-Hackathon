@@ -1,0 +1,127 @@
+section.masthead-sub {
+    background: radial-gradient(100% 100% at 50% 0%, #2C1438 0%, #0E142A 100%);
+    background-size: 100% 100%;
+    position: relative;
+    height: 168px !important;
+
+    .usa-breadcrumb {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+
+    .usa-breadcrumb__link:visited {
+        color: #fff !important;
+    }
+
+    @supports ((-webkit-mask:url()) or (mask:url())) {
+        .usa-breadcrumb__list-item:not(:last-child)::after {
+            mask-size: 1.5ex 1.5ex !important;
+        }
+    }
+}
+
+section.form-instructions {
+    p {
+        line-height: 150%;
+    }
+}
+    
+section.form-fields {
+
+    @media (min-width: 30em){
+        .usa-form {
+            max-width: none !important;
+        }
+    }
+
+    .usa-label, .usa-legend {
+        font-size: 16px;
+        max-width: none;
+    }
+
+    .sub-label {
+        color: #3D4551;
+        font-size: 14px;
+    }
+
+    .usa-fieldset {
+        padding-top: .5rem !important;
+    }
+    
+    .usa-select {
+        background: url(../uswds/img/usa-icons/expand_more.svg) right no-repeat !important;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-position: right 0.5rem center;
+        background-size: 1.25rem;
+        padding-right: 2rem;
+    }
+
+    input, select {
+        border: 1px solid #1B1B1B !important;
+    }
+
+    label, legend {
+        > span {
+            color: #D54309;
+        }
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid #A9AEB1;
+    }
+
+    .form-navigation {
+        .usa-button {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .form-section {
+        display: none;
+    } 
+
+    .form-section.current {
+        display: inherit;
+    }
+
+    input.parsley-success,
+    select.parsley-success,
+    textarea.parsley-success {
+        color: #468847;
+        background-color: #DFF0D8;
+        border: 1px solid #D6E9C6;
+    }
+
+    input.parsley-error,
+    select.parsley-error,
+    textarea.parsley-error {
+        color: #B94A48;
+        background-color: #F2DEDE;
+        border: 1px solid #EED3D7;
+    }
+
+    .parsley-errors-list {
+        margin: 2px 0 3px;
+        padding: 0;
+        list-style-type: none;
+        font-size: 0.9em;
+        line-height: 0.9em;
+        opacity: 0;
+        color: #B94A48;
+
+        transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+    }
+
+    .parsley-errors-list.filled {
+        opacity: 1;
+    }
+}
