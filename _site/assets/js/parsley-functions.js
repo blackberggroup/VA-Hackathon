@@ -24,7 +24,7 @@ $(function () {
       navigateTo(curIndex() - 1);
     });
   
-    // Next button goes forward iff current block validates
+    // Next button goes forward if current block validates
     $('.form-navigation .next').click(function() {
       $('.form-registration').parsley().whenValidate({
         group: 'block-' + curIndex()
