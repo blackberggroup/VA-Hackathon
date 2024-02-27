@@ -69,9 +69,9 @@
         </div>
     
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
-            <label class="usa-label" for="age">Age</label>
+            <label class="usa-label" for="age">Age <span>*</span></label>
             <div class="usa-combo-box">
-                <select class="usa-select" name="age" id="age" data-parsley-group="block-0">
+                <select class="usa-select" name="age" id="age" required="" data-parsley-group="block-0">
                     <option value="he">18-24</option>
                     <option value="she">25-34</option>
                     <option value="they">35-44</option>
@@ -83,7 +83,7 @@
         </div>
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-left-2">
-            <label class="usa-label" for="pronouns">Preferred Pronouns</label>
+            <label class="usa-label" for="pronouns">Preferred Pronoun <span>*</span></label>
             <div class="usa-combo-box">
                 <select class="usa-select" id="pronouns" required="" data-parsley-group="block-0">
                     <option value="he">He</option>
@@ -244,4 +244,5 @@
             <input class="usa-input" type="text" class="form-control" name="linkedin" data-parsley-group="block-0">
         </div>
     </div>
+    
 </div>

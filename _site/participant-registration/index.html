@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>VA Website Template</title>
+  <title>VA Hackathon</title>
 
   <meta property="og:title" content="((TITLE))">
   <meta property="og:url" content="((URL))">
@@ -326,7 +326,7 @@
 
                     <form class="usa-form form-registration" data-parsley-validate>
 
-                        <div class="form-section">
+                        <!-- <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-0">
         <div class="grid-container">
@@ -397,9 +397,9 @@
         </div>
     
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
-            <label class="usa-label" for="age">Age</label>
+            <label class="usa-label" for="age">Age <span>*</span></label>
             <div class="usa-combo-box">
-                <select class="usa-select" name="age" id="age" data-parsley-group="block-0">
+                <select class="usa-select" name="age" id="age" required="" data-parsley-group="block-0">
                     <option value="he">18-24</option>
                     <option value="she">25-34</option>
                     <option value="they">35-44</option>
@@ -411,7 +411,7 @@
         </div>
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-left-2">
-            <label class="usa-label" for="pronouns">Preferred Pronouns</label>
+            <label class="usa-label" for="pronouns">Preferred Pronoun <span>*</span></label>
             <div class="usa-combo-box">
                 <select class="usa-select" id="pronouns" required="" data-parsley-group="block-0">
                     <option value="he">He</option>
@@ -572,9 +572,10 @@
             <input class="usa-input" type="text" class="form-control" name="linkedin" data-parsley-group="block-0">
         </div>
     </div>
-</div>
+    
+</div> -->
 
-                        <div class="form-section">
+                        <!-- <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-1">
         <div class="grid-container">
@@ -760,7 +761,7 @@
             <label class="usa-label" for="tshirt">T-shirt size <span>*</span></label>
             <div class="usa-combo-box">
                 <select class="usa-select" name="tshirt" id="tshirt" required="" data-parsley-group="block-1">
-                    <option value="he">XXS</option>
+                    <option value="xxs">XXS</option>
                     <option value="xs">XS</option>
                     <option value="s">S</option>
                     <option value="m">M</option>
@@ -818,6 +819,218 @@
             <input class="usa-input" type="text" class="form-control" name="emer-phone" required="" data-parsley-group="block-1">
         </div>
     </div>
+
+</div> -->
+
+                        <div class="form-section">
+
+    <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-2">
+        <div class="grid-container">
+            <div class="grid-row grid-gap flex-justify-center">
+                <div class="grid-col-10 tablet-lg:grid-col-8 grid-offset-1">
+                    <div class="usa-step-indicator usa-step-indicator--counters"
+                    aria-label="progress">
+                        <ol class="usa-step-indicator__segments">
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Personal Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete" aria-current="true">
+                                <span class="usa-step-indicator__segment-label">
+                                    Logistics
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--current">
+                                <span class="usa-step-indicator__segment-label">
+                                    Additional Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                    Questions
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                Confirmation
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row" data-parsley-group="block-2">
+        <div class="grid-col-12">
+            <h2>Additional Information</h2>
+        </div>
+    </div>
+
+    <div class="grid-row tablet:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
+            <label class="usa-label" for="affiliation">Select affiliation you have with VHA <span>*</span></label>
+            <div class="usa-combo-box">
+                <select class="usa-select" name="affiliation" id="affiliation" required="" data-parsley-group="block-2">
+                    <option value="staff">VHA staff</option>
+                    <option value="faculty">VHA faculty</option>
+                    <option value="alum">VHA alum</option>
+                    <option value="none">No affiliation</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+            <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
+            <div class="usa-combo-box">
+                <select class="usa-select" name="preferred-contact" id="preferred-contact" required="" data-parsley-group="block-2">
+                    <option value="text-preferred">Phone / text</option>
+                    <option value="email-preferred">Email</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+            <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
+            <div class="usa-combo-box">
+                <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2">
+                    <option value="he">Friend</option>
+                    <option value="she">Email</option>
+                    <option value="they">Social media</option>
+                    <option value="ze">Professor / School</option>
+                    <option value="not">Coworker</option>
+                    <option value="nopref">Hacking Medicine Newsletter</option>
+                    <option value="nopref">Hacking Medicine Website</option>
+                    <option value="nopref">Veteran's Health Administration</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row tablet:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">In the future, would you like to be contacted by our sponsors for opportunities that may be of interest to you? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="sponsor-no"
+                    type="radio"
+                    name="sponsor-options"
+                    value="no"
+                    data-parsley-group="block-2"
+                  />
+                  <label class="usa-radio__label" for="sponsor-no"
+                    >No</label
+                  >
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="sponsor-yes"
+                    type="radio"
+                    name="sponsor-options"
+                    value="yes"
+                    required=""
+                    data-parsley-group="block-2"
+                  />
+                  <label class="usa-radio__label" for="sponsor-yes"
+                    >Yes</label
+                  >
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Have you been to healthcare hackathon before? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hackathon-no"
+                    type="radio"
+                    name="hackathon-options"
+                    value="no"
+                    data-parsley-group="block-2"
+                  />
+                  <label class="usa-radio__label" for="hackathon-no"
+                    >No</label
+                  >
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hackathon-yes"
+                    type="radio"
+                    name="hackathon-options"
+                    value="yes"
+                    required=""
+                    data-parsley-group="block-2"
+                  />
+                  <label class="usa-radio__label" for="hackathon-yes"
+                    >Yes</label
+                  >
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+            <div class="usa-form-group">
+                <label class="usa-label" for="hack-exp-textarea">If yes, please list the names and years of the hackathons you've attended.</label>
+                <textarea
+                class="usa-textarea margin-top-2"
+                id="hack-exp-textarea"
+                name="hack-exp-textarea"
+                maxlength="100"
+                rows="6"
+                aria-describedby="hack-exp-textarea-info hack-exp-textarea-hint"
+                data-parsley-group="block-2"
+                ></textarea>
+            </div>
+            <p class="sub-label">Please list each hackathon in its own line, and separate the hackathon name and year with a comma (ex. NYC Grand Hack, 2018)</p>
+        </div>
+    </div>
+
+    <div class="grid-row tablet:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
+            <label class="usa-label" for="affiliation">Please check off any technical skills you are proficient in. </label>
+            <select class="usa-select" name="affiliation" id="affiliation" required="" data-parsley-group="block-2" multiple>
+                <option value="staff">VHA staff</option>
+                <option value="faculty">VHA faculty</option>
+                <option value="alum">VHA alum</option>
+                <option value="none">No affiliation</option>
+            </select>
+        </div>
+
+        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+            <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
+            <div class="usa-combo-box">
+                <select class="usa-select" name="preferred-contact" id="preferred-contact" required="" data-parsley-group="block-2">
+                    <option value="text-preferred">Phone / text</option>
+                    <option value="email-preferred">Email</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+            <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
+            <div class="usa-combo-box">
+                <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2" multiple>
+                    <option value="he">Friend</option>
+                    <option value="she">Email</option>
+                    <option value="they">Social media</option>
+                    <option value="ze">Professor / School</option>
+                    <option value="not">Coworker</option>
+                    <option value="nopref">Hacking Medicine Newsletter</option>
+                    <option value="nopref">Hacking Medicine Website</option>
+                    <option value="nopref">Veteran's Health Administration</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
                         <hr class="margin-top-10" role="none" />
@@ -825,7 +1038,7 @@
                         <div class="form-navigation text-right margin-y-5">
                             <button type="button" class="usa-button usa-button--outline previous btn">Back</button>
                             <button type="button" class="usa-button next btn">Continue</button>
-                            <input class="usa-input" type="submit" class="btn">
+                            <input class="usa-button btn" type="submit" value="Complete Application">
                             <span class="clearfix"></span>
                         </div>
 
