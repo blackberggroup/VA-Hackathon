@@ -55,3 +55,5 @@ function displayResults() {
 }
 
 document.getElementById("nextBtn").addEventListener("click", displayResults);
+
+$("span.placeholder").html("Select all that apply");

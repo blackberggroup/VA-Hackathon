@@ -41,8 +41,10 @@ section.form-fields {
     }
 
     .sub-label {
-        color: #3D4551;
+        color: #3d4551;
         font-size: 14px;
+        padding: 0;
+        margin: 0.5em 0;
     }
 
     .usa-fieldset {
@@ -142,7 +144,7 @@ section.form-fields {
 
     .multiselect-dropdown, .usa-select {
         display: inline-block;
-        padding: 0.5rem;
+        padding: .45rem .5rem;
         border-radius: 0;
         background-color: white;
         position: relative;
@@ -153,6 +155,7 @@ section.form-fields {
         right: 0;
         border: 1px solid #1b1b1b !important;
         margin-top: 0.5rem;
+        width: 100% !important;
     }
 
     section.form-fields .usa-select {
@@ -185,5 +188,15 @@ section.form-fields {
 
     .optdel {
         display: none;
+    }
+
+    span.placeholder {
+        visibility: hidden;
+    }
+
+    span.placeholder:before {
+        content: "Select all that apply" !important;
+        visibility: visible;
+        color: #000;
     }
 }
