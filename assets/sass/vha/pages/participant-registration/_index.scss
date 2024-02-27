@@ -131,4 +131,12 @@ section.form-fields {
         height: 132px;
         padding: 5px;
     }
+
+    .usa-table {
+        width: 100%;
+   
+        th, td {
+            width: 50%;
+        }
+    }
 }
