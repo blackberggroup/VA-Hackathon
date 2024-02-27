@@ -297,7 +297,7 @@
                                   </li>
                                 </ol>
                             </nav>
-                            <h1 class="text-center text-white padding-y-4">Participant Registration</h1>
+                            <h1 class="text-center text-white padding-y-7 tablet-lg:padding-y-4">Participant Registration</h1>
                         </div>
                     </div>
                 </div>       
@@ -326,7 +326,7 @@
 
                     <form class="usa-form form-registration" data-parsley-validate>
 
-                        <!-- <div class="form-section">
+                        <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-0">
         <div class="grid-container">
@@ -409,14 +409,14 @@
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
-            <label class="usa-label" for="pronouns">Preferred Pronoun <span>*</span></label>
-            <select class="usa-select" id="name" id="pronouns" required="" data-parsley-group="block-0">
-                <option value="he" selected="selected">He</option>
-                <option value="she">She</option>
-                <option value="they">They</option>
-                <option value="ze">Ze</option>
-                <option value="not">A pronoun not listed</option>
-                <option value="nopref">No pronoun preference/prefer not to say</option>
+            <label class="usa-label" for="pronoun">Preferred Pronoun <span>*</span></label>
+            <select class="usa-select" name="pronoun" id="pronoun" required="" data-parsley-group="block-0">
+                <option value="He" selected="selected">He</option>
+                <option value="She">She</option>
+                <option value="They">They</option>
+                <option value="Ze">Ze</option>
+                <option value="A pronoun not listed">A pronoun not listed</option>
+                <option value="No pronoun preference/prefer not to say">No pronoun preference/prefer not to say</option>
             </select>
         </div>
     </div>
@@ -442,14 +442,14 @@
         <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="ethnicity">Which of the following best describes your ethnic background? <span>*</span></label>
             <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0" multiple>
-                <option value="indian_alaskan" selected="selected">American Indian or Alaska Native
+                <option value="American Indian or Alaska Native" selected="selected">American Indian or Alaska Native
                 </option>
-                <option value="asian">Asian</option>
-                <option value="black_african">Black or African American</option>
-                <option value="white">Caucasian or White</option>
-                <option value="hawaiian_pacific">Native Hawaiian or Other Pacific Islander</option>
-                <option value="other">Other</option>
-                <option value="prefer_not">Prefer not to say</option>
+                <option value="Asian">Asian</option>
+                <option value="Black or African American">Black or African American</option>
+                <option value="Caucasian or White">Caucasian or White</option>
+                <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                <option value="Other">Other</option>
+                <option value="Prefer not to say">Prefer not to say</option>
             </select>
             <p class="sub-label">Select all that apply.</p>
         </div>
@@ -470,12 +470,10 @@
                     id="vet-no"
                     type="radio"
                     name="vet-options"
-                    value="no"
+                    value="No"
                     data-parsley-group="block-0"
                   />
-                  <label class="usa-radio__label" for="vet-no"
-                    >No</label
-                  >
+                  <label class="usa-radio__label" for="vet-no">No</label>
                 </div>
                 <div class="usa-radio">
                   <input
@@ -483,13 +481,11 @@
                     id="vet-yes"
                     type="radio"
                     name="vet-options"
-                    value="yes"
+                    value="Yes"
                     required=""
                     data-parsley-group="block-0"
                   />
-                  <label class="usa-radio__label" for="vet-yes"
-                    >Yes</label
-                  >
+                  <label class="usa-radio__label" for="vet-yes">Yes</label>
                 </div>
             </fieldset>
         </div>
@@ -497,8 +493,8 @@
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="occupation">What is your occupation? <span>*</span></label>
             <select class="usa-select" name="occupation" id="occupation" required="" data-parsley-group="block-0">
-                <option value="student">Student</option>
-                <option value="professional" selected="selected">Professional / Non-student</option>
+                <option value="Student">Student</option>
+                <option value="Professional" selected="selected">Professional / Non-student</option>
             </select>
         </div>
 
@@ -519,31 +515,31 @@
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="primary_background">What is your primary background? <span>*</span></label>
             <select class="usa-select" name="primary_background" id="primary_background" required="" data-parsley-group="block-0">
-                <option value="finance" selected="selected">Business / Finance</option>
-                <option value="healthcare">Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
-                <option value="designer">Designer (Product, Graphic, Print, etc.)</option>
-                <option value="developer">Software Professional (Developer, IT Professional, etc.)</option>
-                <option value="engineer">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
-                <option value="engineer">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
-                <option value="data_scientist">Data Engineer / Data Scientist</option>
-                <option value="writer">Writer / Journalist / Photographer / Media Specialist</option>
-                <option value="patient">Patient / Patient's Family</option>
-                <option value="other">Other</option>
+                <option value="Business / Finance" selected="selected">Business / Finance</option>
+                <option value="Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)">Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
+                <option value="Designer (Product, Graphic, Print, etc.)">Designer (Product, Graphic, Print, etc.)</option>
+                <option value="Software Professional (Developer, IT Professional, etc.)">Software Professional (Developer, IT Professional, etc.)</option>
+                <option value="Engineer (Electrical, Mechanical, Biological, Chemical, etc.)">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="Engineer (Electrical, Mechanical, Biological, Chemical, etc.)">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="Data Engineer / Data Scientist">Data Engineer / Data Scientist</option>
+                <option value="Writer / Journalist / Photographer / Media Specialist">Writer / Journalist / Photographer / Media Specialist</option>
+                <option value="Patient / Patient's Family">Patient / Patient's Family</option>
+                <option value="Other">Other</option>
             </select>
         </div>
     
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
             <label class="usa-label" for="additional_background">Additional background areas</label>
-            <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0" multiple>
-                <option value="finance2" selected="selected">Business / Finance</option>
-                <option value="provider">Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
-                <option value="designer">Designer (Product, Graphic, Print, etc.)</option>
-                <option value="software">Software Professional (Developer, IT Professional, etc.)</option>
-                <option value="engineer2">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
-                <option value="data_scientist2">Data Engineer / Data Scientist</option>
-                <option value="scientist">Scientist (Life Sciences, Physics, etc. )</option>
-                <option value="writer2">Writer / Journalist / Photographer / Media Specialist</option>
-                <option value="patient2">Patient / Patient's Family</option>
+            <select class="usa-select" name="additional_background" id="additional_background" required="" data-parsley-group="block-0" multiple>
+                <option value="Business / Finance" selected="selected">Business / Finance</option>
+                <option value="Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)">Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
+                <option value="Designer (Product, Graphic, Print, etc.)">Designer (Product, Graphic, Print, etc.)</option>
+                <option value="Software Professional (Developer, IT Professional, etc.)">Software Professional (Developer, IT Professional, etc.)</option>
+                <option value="Engineer (Electrical, Mechanical, Biological, Chemical, etc.)">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="Data Engineer / Data Scientist">Data Engineer / Data Scientist</option>
+                <option value="Scientist (Life Sciences, Physics, etc. )">Scientist (Life Sciences, Physics, etc. )</option>
+                <option value="Writer / Journalist / Photographer / Media Specialist">Writer / Journalist / Photographer / Media Specialist</option>
+                <option value="Patient / Patient's Family">Patient / Patient's Family</option>
             </select>
             <p class="sub-label">Check all that apply.</p>
         </div>
@@ -562,7 +558,7 @@
         </div>
     </div>
     
-</div> -->
+</div>
 
                         <!-- <div class="form-section">
 
@@ -807,7 +803,7 @@
 
 </div> -->
 
-                        <div class="form-section">
+                        <!-- <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-2">
         <div class="grid-container">
@@ -854,8 +850,8 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-4">
-        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
+    <div class="grid-row tablet-lg:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="affiliation">Select affiliation you have with VHA <span>*</span></label>
             <select class="usa-select" name="affiliation" id="affiliation" required="" data-parsley-group="block-2">
                 <option value="staff">VHA staff</option>
@@ -865,7 +861,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
             <select class="usa-select" name="preferred-contact" id="preferred-contact" required="" data-parsley-group="block-2">
                 <option value="text-preferred" selected="selected">Phone / text</option>
@@ -873,7 +869,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
             <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2">
                 <option value="friend" selected="selected">Friend</option>
@@ -888,8 +884,8 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-4">
-        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
+    <div class="grid-row tablet-lg:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">In the future, would you like to be contacted by our sponsors for opportunities that may be of interest to you? <span>*</span></legend>
                 <div class="usa-radio">
@@ -922,7 +918,7 @@
             </fieldset>
         </div>
 
-        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Have you been to healthcare hackathon before? <span>*</span></legend>
                 <div class="usa-radio">
@@ -955,7 +951,7 @@
             </fieldset>
         </div>
 
-        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <div class="usa-form-group">
                 <label class="usa-label" for="hack-exp-textarea">If yes, please list the names and years of the hackathons you've attended.</label>
                 <textarea
@@ -972,8 +968,8 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-4">
-        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
+    <div class="grid-row padding-top-2 tablet-lg:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="tech_skills">Please check off any technical skills you are proficient in. </label>
             <select class="usa-select" name="tech_skills" id="tech_skills" required="" data-parsley-group="block-2" multiple>
                 <option value="fullstack">Front-end (includes UI/UX) / Back-end Development</option>
@@ -988,7 +984,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="team_skills">Please check off any team-based skills you have.</label>
             <select class="usa-select" name="team_skills" id="team_skills" required="" data-parsley-group="block-2" multiple>
                 <option value="assertive">Assertive</option>
@@ -1007,7 +1003,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="hear_about_us">Please check off any clinical skills you have <span>*</span></label>
             <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2" multiple>
                 <option value="cdm" selected="selected">Clinical Data Management</option>
@@ -1023,7 +1019,7 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-4">
+    <div class="grid-row padding-top-4">
         <div class="grid-col-12">
             <div class="usa-form-group">
                 <label class="usa-label" for="exp-skills-textarea">Please briefly describe your experience and skills. <span>*</span></label>
@@ -1041,7 +1037,7 @@
         </div>
     </div>
 
-</div>
+</div> -->
 
                         <!-- <div class="form-section">
 
@@ -1090,7 +1086,7 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-4">
+    <div class="grid-row tablet-lg:padding-top-4">
         <div class="grid-col-12">
             <div class="usa-form-group">
                 <label class="usa-label" for="exp-skills-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
@@ -1108,7 +1104,7 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-8">
+    <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <div class="usa-form-group">
                 <label class="usa-label" for="exp-skills-textarea">What are three things you are hoping to gain from this experience? <span>*</span></label>
@@ -1126,7 +1122,7 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-8">
+    <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <div class="usa-form-group">
                 <label class="usa-label" for="exp-skills-textarea">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity? <span>*</span></label>
@@ -1144,7 +1140,7 @@
         </div>
     </div>
 
-    <div class="grid-row tablet:padding-top-8">
+    <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
@@ -1179,7 +1175,7 @@
             <p class="sub-label">The event takes place from 4pm-10pm Friday May 17th, 8am-10pm Saturday May 16th, and 8am-2pm Sunday May 17th [times are approximate Eastern Time].</p>
         </div>
 
-        <div class="grid-col-12 tablet:padding-top-8">
+        <div class="grid-col-12 padding-top-8">
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend">When you attend the VHA Tampa Hackathon 2024, you will enter an area where photography, audio and, video recording may be taken. Event organizers may use, reproduce, and/or publish photographs, videos, and other media taken during the Hackathon for promotional, educational, and/or informational purposes, including but not limited to website content, social media, press releases, and marketing materials. Event organizers retain the right to use the images and recordings for an unlimited period. By submitting this form, you consent to the use, reproduction, and/or publication of media captured during the event. Do you acknowledge this? <span>*</span</legend>
                 <div class="usa-checkbox">
@@ -1201,7 +1197,7 @@
 
                         <div class="form-section confirmation-page">
 
-    <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-4">
+    <div id="results_progress-tracker" class="progress-tracker" data-parsley-group="block-4">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet-lg:grid-col-8 tablet-lg:grid-offset-1">
@@ -1251,24 +1247,89 @@
         <div class="grid-col-12">
             <table class="usa-table">
                 <thead>
-                  <tr>
-                    <th colspan="2">Personal Information</th>
-                  </tr>
+                    <tr>
+                        <th colspan="2">Personal Information</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">First name</th>
-                    <td id="fname"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Last name</th>
-                    <td id="lname"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Email</th>
-                    <td id="email"></td>
-                  </tr>
+                    <tr>
+                        <th scope="row">First name</th>
+                        <td id="results_fname"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Last name</th>
+                        <td id="results_lname"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td id="results_email"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone</th>
+                        <td id="results_phone"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Preferred Pronoun</th>
+                        <td id="results_pronoun"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Country of Residence</th>
+                        <td id="results_country"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">State</th>
+                        <td id="results_state"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">City</th>
+                        <td id="results_city"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Which of the following best describes your ethnic background?</th>
+                        <td id="results_ethnicity"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If you selected "other" to the previous question, please elaborate if you feel comfortable doing so.</th>
+                        <td id="results_other_ethnicity"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Are you active duty or a Veteran of the United States Military?</th>
+                        <td id="results_veteran"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What is your occupation?</th>
+                        <td id="results_occupation"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">School / Company Name</th>
+                        <td id="results_school_company"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Job Title:</th>
+                        <td id="results_job_title"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What is your primary background?</th>
+                        <td id="results_prim_bkgd"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Additional background areas</th>
+                        <td id="results_addl_bkgd"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Link to Resume</th>
+                        <td id="results_resume"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">LinkedIn Profile URL</th>
+                        <td id="results_linkedin"></td>
+                    </tr>
                 </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Logistics</th>
+                    </tr>
+                </thead>
             </table>
         </div>
     </div>
