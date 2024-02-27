@@ -40,8 +40,11 @@ $(function () {
   navigateTo(0); // Start at the beginning
 });
 
+
+// Display user inputs in results table
 function displayResults() {
   if ($('.form-section.confirmation-page').length > 0){
+    // Section 1
     var firstName = $("#firstname").val();
     var lastName = $("#lastname").val();
     var emailAddy = $("#email").val();

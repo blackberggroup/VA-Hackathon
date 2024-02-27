@@ -70,30 +70,26 @@
     
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
             <label class="usa-label" for="age">Age <span>*</span></label>
-            <div class="usa-combo-box">
-                <select class="usa-select" name="age" id="age" required="" data-parsley-group="block-0">
-                    <option value="he">18-24</option>
-                    <option value="she">25-34</option>
-                    <option value="they">35-44</option>
-                    <option value="ze">45-54</option>
-                    <option value="not">55+</option>
-                    <option value="nopref">Prefer not to say</option>
-                </select>
-            </div>
+            <select class="usa-select" name="age" id="age" required="" data-parsley-group="block-0">
+                <option value="18_24" selected="selected">18-24</option>
+                <option value="25_34">25-34</option>
+                <option value="35_44">35-44</option>
+                <option value="45_54">45-54</option>
+                <option value="55">55+</option>
+                <option value="nopref">Prefer not to say</option>
+            </select>
         </div>
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-left-2">
             <label class="usa-label" for="pronouns">Preferred Pronoun <span>*</span></label>
-            <div class="usa-combo-box">
-                <select class="usa-select" id="pronouns" required="" data-parsley-group="block-0">
-                    <option value="he">He</option>
-                    <option value="she">She</option>
-                    <option value="they">They</option>
-                    <option value="ze">Ze</option>
-                    <option value="not">A pronoun not listed</option>
-                    <option value="nopref">No pronoun preference/prefer not to say</option>
-                </select>
-            </div>
+            <select class="usa-select" id="pronouns" required="" data-parsley-group="block-0">
+                <option value="he" selected="selected">He</option>
+                <option value="she">She</option>
+                <option value="they">They</option>
+                <option value="ze">Ze</option>
+                <option value="not">A pronoun not listed</option>
+                <option value="nopref">No pronoun preference/prefer not to say</option>
+            </select>
         </div>
     </div>
 
@@ -117,18 +113,16 @@
     <div class="grid-row tablet:padding-y-5">
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-right-2">
             <label class="usa-label" for="ethnicity">Which of the following best describes your ethnic background? <span>*</span></label>
-            <div class="usa-combo-box">
-                <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0">
-                    <option value="he">American Indian or Alaska Native
-                    </option>
-                    <option value="she">Asian</option>
-                    <option value="they">Black or African American</option>
-                    <option value="ze">Caucasian or White</option>
-                    <option value="not">Native Hawaiian or Other Pacific Islander</option>
-                    <option value="nopref">Other</option>
-                    <option value="nopref">Prefer not to say</option>
-                </select>
-            </div>
+            <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0" multiple>
+                <option value="indian_alaskan" selected="selected">American Indian or Alaska Native
+                </option>
+                <option value="asian">Asian</option>
+                <option value="black_african">Black or African American</option>
+                <option value="white">Caucasian or White</option>
+                <option value="hawaiian_pacific">Native Hawaiian or Other Pacific Islander</option>
+                <option value="other">Other</option>
+                <option value="prefer_not">Prefer not to say</option>
+            </select>
             <p class="sub-label">Select all that apply.</p>
         </div>
     
@@ -174,12 +168,10 @@
     
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
             <label class="usa-label" for="occupation">What is your occupation? <span>*</span></label>
-            <div class="usa-combo-box">
-                <select class="usa-select" name="occupation" id="occupation" required="" data-parsley-group="block-0">
-                    <option value="student">Student</option>
-                    <option value="professional">Professional / Non-student</option>
-                </select>
-            </div>
+            <select class="usa-select" name="occupation" id="occupation" required="" data-parsley-group="block-0">
+                <option value="student">Student</option>
+                <option value="professional" selected="selected">Professional / Non-student</option>
+            </select>
         </div>
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-left-2">
@@ -198,37 +190,34 @@
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
             <label class="usa-label" for="primary_background">What is your primary background? <span>*</span></label>
-            <div class="usa-combo-box">
-                <select class="usa-select" name="primary_background" id="primary_background" required="" data-parsley-group="block-0">
-                    <option value="finance">Business / Finance</option>
-                    <option value="healthcare">Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
-                    <option value="designer">Designer (Product, Graphic, Print, etc.)</option>
-                    <option value="developer">Software Professional (Developer, IT Professional, etc.)</option>
-                    <option value="engineer">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
-                    <option value="engineer">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
-                    <option value="data_scientist">Data Engineer / Data Scientist</option>
-                    <option value="writer">Writer / Journalist / Photographer / Media Specialist</option>
-                    <option value="patient">Patient / Patient's Family</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+            <select class="usa-select" name="primary_background" id="primary_background" required="" data-parsley-group="block-0">
+                <option value="finance" selected="selected">Business / Finance</option>
+                <option value="healthcare">Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
+                <option value="designer">Designer (Product, Graphic, Print, etc.)</option>
+                <option value="developer">Software Professional (Developer, IT Professional, etc.)</option>
+                <option value="engineer">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="engineer">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="data_scientist">Data Engineer / Data Scientist</option>
+                <option value="writer">Writer / Journalist / Photographer / Media Specialist</option>
+                <option value="patient">Patient / Patient's Family</option>
+                <option value="other">Other</option>
+            </select>
         </div>
     
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-left-2">
             <label class="usa-label" for="additional_background">Additional background areas</label>
-            <div class="usa-combo-box">
-                <select class="usa-select" name="additional_background" id="additional_background" data-parsley-group="block-0">
-                    <option value="finance2">Business / Finance</option>
-                    <option value="provider">Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
-                    <option value="designer">Designer (Product, Graphic, Print, etc.)</option>
-                    <option value="software">Software Professional (Developer, IT Professional, etc.)</option>
-                    <option value="engineer2">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
-                    <option value="data_scientist2">Data Engineer / Data Scientist</option>
-                    <option value="scientist">Scientist (Life Sciences, Physics, etc. )</option>
-                    <option value="writer2">Writer / Journalist / Photographer / Media Specialist</option>
-                    <option value="patient2">Patient / Patient's Family</option>
-                </select>
-            </div>
+            <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0" multiple>
+                <option value="finance2" selected="selected">Business / Finance</option>
+                <option value="provider">Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
+                <option value="designer">Designer (Product, Graphic, Print, etc.)</option>
+                <option value="software">Software Professional (Developer, IT Professional, etc.)</option>
+                <option value="engineer2">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="data_scientist2">Data Engineer / Data Scientist</option>
+                <option value="scientist">Scientist (Life Sciences, Physics, etc. )</option>
+                <option value="writer2">Writer / Journalist / Photographer / Media Specialist</option>
+                <option value="patient2">Patient / Patient's Family</option>
+            </select>
+            <p class="sub-label">Check all that apply.</p>
         </div>
     </div>
 

@@ -50,7 +50,7 @@ section.form-fields {
     }
     
     .usa-select {
-        background: url(../uswds/img/usa-icons/expand_more.svg) right no-repeat !important;
+        background-image: url(../uswds/img/usa-icons/line_and_arrow.svg),linear-gradient(transparent,transparent);
         background-repeat: no-repeat;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -138,5 +138,52 @@ section.form-fields {
         th, td {
             width: 50%;
         }
+    }
+
+    .multiselect-dropdown, .usa-select {
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 0;
+        background-color: white;
+        position: relative;
+        background-position: right 0.25rem center;
+        background-image: url(../uswds/img/usa-icons/line_and_arrow.svg),linear-gradient(transparent,transparent);
+        background-repeat: no-repeat;
+        background-size: auto 2rem;
+        right: 0;
+        border: 1px solid #1b1b1b !important;
+        margin-top: 0.5rem;
+    }
+
+    section.form-fields .usa-select {
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 0;
+        background-color: white;
+        position: relative;
+        background-position: right 0.25rem center;
+        background-image: url(../uswds/img/usa-icons/line_and_arrow.svg),linear-gradient(transparent,transparent);
+        background-repeat: no-repeat;
+        background-size: auto 2rem;
+        right: 0;
+        border: 1px solid #1b1b1b !important;
+        margin-top: 0.5rem;
+    }
+
+    .multiselect-dropdown span.optext {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder {
+        margin-right: 0.5em;
+        margin-bottom: 0;
+        padding: 1px 0;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
+    .optdel {
+        display: none;
     }
 }
