@@ -126,7 +126,7 @@ section.form-fields {
         opacity: 1;
     }
 
-    textarea[name="hack-exp-textarea"] {
+    textarea[name="hack-exp-textarea"], textarea[name="exp-skills-textarea"] {
         width: 100%;
         height: 132px;
         padding: 5px;

@@ -997,27 +997,158 @@
         <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-4 tablet:padding-right-2">
             <label class="usa-label" for="affiliation">Please check off any technical skills you are proficient in. </label>
             <select class="usa-select" name="affiliation" id="affiliation" required="" data-parsley-group="block-2" multiple>
-                <option value="staff">VHA staff</option>
-                <option value="faculty">VHA faculty</option>
-                <option value="alum">VHA alum</option>
-                <option value="none">No affiliation</option>
+                <option value="fullstack">Front-end (includes UI/UX) / Back-end Development</option>
+                <option value="data_analytics">Data Analytics / Mining</option>
+                <option value="mktt_analytics">Business / Market Analytics</option>
+                <option value="econ_analytics">Economic Analytics</option>
+                <option value="marketing">Business Development / Marketing</option>
+                <option value="sci_dev">Scientific Research / Development</option>
+                <option value="man_qc">Manufacturing and Quality Control</option>
+                <option value="reg_qc">Regulatory and Risk Management</option>
+                <option value="operations">Operations and Supply Chain Management</option>
             </select>
         </div>
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
-            <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
-            <div class="usa-combo-box">
-                <select class="usa-select" name="preferred-contact" id="preferred-contact" required="" data-parsley-group="block-2">
-                    <option value="text-preferred">Phone / text</option>
-                    <option value="email-preferred">Email</option>
-                </select>
-            </div>
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend">Please check off any team-based skills you have.</legend>
+                <div class="usa-checkbox">
+                  <input
+                    class="usa-checkbox__input"
+                    id="check-assertive"
+                    type="checkbox"
+                    name="team_skills"
+                    value="assertive"
+                  />
+                  <label class="usa-checkbox__label" for="check-assertive">Assertive</label>
+                </div>
+                <div class="usa-checkbox">
+                  <input
+                    class="usa-checkbox__input"
+                    id="check-active-listener"
+                    type="checkbox"
+                    name="team_skills"
+                    value="active-listener"
+                  />
+                  <label class="usa-checkbox__label" for="check-active-listener">Active Listener</label>
+                </div>
+                <div class="usa-checkbox">
+                  <input
+                    class="usa-checkbox__input"
+                    id="check-conflict-management"
+                    type="checkbox"
+                    name="team_skills"
+                    value="conflict-management"
+                  />
+                  <label class="usa-checkbox__label" for="check-conflict-management">Conflict Management</label>
+                </div>
+                <div class="usa-checkbox">
+                  <input
+                    class="usa-checkbox__input"
+                    id="check-creative-thinker"
+                    type="checkbox"
+                    name="team_skills"
+                    value="creative-thinker"
+                  />
+                  <label class="usa-checkbox__label" for="check-creative-thinker">Creative Thinker</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-influential"
+                      type="checkbox"
+                      name="team_skills"
+                      value="influential"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Influential</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-multitasking"
+                      type="checkbox"
+                      name="team_skills"
+                      value="multitasking"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Multitasking</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-organized"
+                      type="checkbox"
+                      name="team_skills"
+                      value="organized"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Organized</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-patient"
+                      type="checkbox"
+                      name="team_skills"
+                      value="patient"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Patient</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-questioning"
+                      type="checkbox"
+                      name="team_skills"
+                      value="questioning"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Questioning</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-receptive"
+                      type="checkbox"
+                      name="team_skills"
+                      value="receptive"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Receptive</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-reliable"
+                      type="checkbox"
+                      name="team_skills"
+                      value="reliable"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Reliable</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-supportive"
+                      type="checkbox"
+                      name="team_skills"
+                      value="supportive"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Supportive</label>
+                </div>
+                <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-team-player"
+                      type="checkbox"
+                      name="team_skills"
+                      value="team-player"
+                    />
+                    <label class="usa-checkbox__label" for="check-creative-thinker">Team Player</label>
+                </div>
+              </fieldset>
         </div>
 
         <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-1">
-            <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
+            <label class="usa-label" for="hear_about_us">Please check off any clinical skills you have <span>*</span></label>
             <div class="usa-combo-box">
-                <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2" multiple>
+                <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2" data-parsley-multiple>
                     <option value="he">Friend</option>
                     <option value="she">Email</option>
                     <option value="they">Social media</option>
@@ -1030,7 +1161,25 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="grid-row tablet:padding-top-4">
+        <div class="grid-col-12">
+            <div class="usa-form-group">
+                <label class="usa-label" for="exp-skills-textarea">Please briefly describe your experience and skills. <span>*</span></label>
+                <textarea
+                class="usa-textarea margin-top-2"
+                id="exp-skills-textarea"
+                name="exp-skills-textarea"
+                maxlength="100"
+                rows="6"
+                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                data-parsley-group="block-2"
+                ></textarea>
+            </div>
+            <p class="sub-label">In 200 - 500 characters, please share a little bit more about your background so we can ensure a diversity of skills at the event.</p>
+        </div>
+    </div>
+
 </div>
 
                         <hr class="margin-top-10" role="none" />
