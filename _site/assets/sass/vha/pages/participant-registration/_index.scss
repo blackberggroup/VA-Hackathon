@@ -134,6 +134,12 @@ section.form-fields {
         padding: 5px;
     }
 
+    @media (max-width: 767px){
+        .table-wrapper {
+            overflow: scroll;
+        }
+    }
+
     .usa-table {
         width: 100%;
    
