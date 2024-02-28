@@ -44,7 +44,7 @@ $(function () {
 // Display user inputs in results table
 function displayResults() {
   if ($('.form-section.confirmation-page').length > 0) {
-    // Section 1
+    // Personal Information
     var firstName = $("#firstname").val();
     var lastName = $("#lastname").val();
     var emailAddy = $("#email").val();
@@ -83,6 +83,92 @@ function displayResults() {
     $("td#results_addl_bkgd").html(addlBkgd);
     $("td#results_resume").html(resume);
     $("td#results_linkedin").html(linkedin);
+
+    // Logistics
+    var travelOptions = $("input[type='radio'][name=travel-options]:checked").val();
+    var hotelOptions = $("input[type='radio'][name=hotel-options]:checked").val();
+    var accessOptions = $("input[type='radio'][name=access-options]:checked").val();
+    var access_needs = $("#access_needs").val();
+    var tshirtSize = $("#tshirt").val();
+    var diet = $("#diet").val();
+    $("td#results_travel-options").html(travelOptions);
+    $("td#results_hotel-options").html(hotelOptions);
+    $("td#results_access-options").html(accessOptions);
+    $("td#results_access_needs").html(access_needs);
+    $("td#results_tshirt").html(tshirtSize);
+    $("td#results_diet").html(diet);
+
+    // Emergency Contact
+    var emerName = $("#emer-name").val();
+    var emerEmail = $("#emer-email").val();
+    var emerPhone = $("#emer-phone").val();
+    $("td#results_emer-name").html(emerName);
+    $("td#results_emer-email").html(emerEmail);
+    $("td#results_emer-phone").html(emerPhone);
+
+    //Additional Information
+    var affiliation = $("#affiliation").val();
+    var preferredContact = $("#preferred-contact").val();
+    var hear_about_us = $("#hear_about_us").val();
+    var sponsorOptions = $("input[type='radio'][name=sponsor-options]:checked").val();
+    var hackathonOptions = $("input[type='radio'][name=hackathon-options]:checked").val();
+    var hackExp = $("#hack-exp-textarea").val();
+    
+    var techSkillsResults;
+    var techSkills = $("#tech_skills").val();
+    if ($('#tech_skills').length > 0) {
+        if (techSkills.length > 1) {
+            techSkillsResults = techSkills.join(', ');
+        } else {
+            techSkillsResults = techSkills;
+        }
+    }
+
+    var teamSkillsResults;
+    var teamSkills = $("#team_skills").val();
+    if ($('#team_skills').length > 0) {
+        if (teamSkills.length > 1) {
+            teamSkillsResults = teamSkills.join(', ');
+        } else {
+            teamSkillsResults = teamSkills;
+        }
+    }
+
+    var clinicalSkillsResults;
+    var clinicalSkills = $("#clinical_skills").val();
+    if ($('#clinical_skills').length > 0) {
+        if (clinicalSkills.length > 1) {
+            clinicalSkillsResults = clinicalSkills.join(', ');
+        } else {
+            clinicalSkillsResults = clinicalSkills;
+        }
+    }
+
+    var skillsExp = $("#exp-skills-textarea").val();
+
+    $("td#results_affiliation").html(affiliation);
+    $("td#results_preferred-contact").html(preferredContact);
+    $("td#results_hear_about_us").html(hear_about_us);
+    $("td#results_sponsor-options").html(sponsorOptions);
+    $("td#results_hackathon-options").html(hackathonOptions);
+    $("td#results_hack-exp-textarea").html(hackExp);
+    $("td#results_tech_skills").html(techSkillsResults);
+    $("td#results_team_skills").html(teamSkillsResults);
+    $("td#results_clinical_skills").html(clinicalSkillsResults);
+    $("td#results_exp-skills-textarea").html(skillsExp);
+
+    // Questions
+    var healthcare = $("#healthcare-textarea").val();
+    var expGain = $("#exp-gain-textarea").val();
+    var viewsGain = $("#views-textarea").val();
+    var hackOptions = $("input[type='radio'][name=hack-options]:checked").val();
+    var checkAcknowledge = $("#check-acknowledge").val();
+    
+    $("td#results_healthcare-textarea").html(healthcare);
+    $("td#results_exp-gain-textarea").html(expGain);
+    $("td#results_views-textarea").html(viewsGain);
+    $("td#results_hack-options").html(hackOptions);
+    $("td#results_check-acknowledge").html(checkAcknowledge);
   }
 } 
 

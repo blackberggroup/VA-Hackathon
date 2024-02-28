@@ -560,7 +560,7 @@
     
 </div>
 
-                        <!-- <div class="form-section">
+                        <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-1">
         <div class="grid-container">
@@ -617,7 +617,7 @@
                     id="travel-no"
                     type="radio"
                     name="travel-options"
-                    value="no"
+                    value="No"
                     data-parsley-group="block-1"
                   />
                   <label class="usa-radio__label" for="travel-no"
@@ -630,7 +630,7 @@
                     id="travel-yes"
                     type="radio"
                     name="travel-options"
-                    value="yes"
+                    value="Yes"
                     data-parsley-group="block-1"
                   />
                   <label class="usa-radio__label" for="travel-yes"
@@ -643,7 +643,7 @@
                       id="travel-yes_visa"
                       type="radio"
                       name="travel-options"
-                      value="yes_visa"
+                      value="Yes, and I require a visa"
                       required=""
                       data-parsley-group="block-1"
                     />
@@ -663,7 +663,7 @@
                     id="hotel-no"
                     type="radio"
                     name="hotel-options"
-                    value="no"
+                    value="No"
                     data-parsley-group="block-1"
                   />
                   <label class="usa-radio__label" for="hotel-no"
@@ -676,7 +676,7 @@
                     id="hotel-yes"
                     type="radio"
                     name="hotel-options"
-                    value="yes"
+                    value="Yes"
                     data-parsley-group="block-1"
                   />
                   <label class="usa-radio__label" for="hotel-yes"
@@ -689,7 +689,7 @@
                       id="hotel-not_sure"
                       type="radio"
                       name="hotel-options"
-                      value="not_sure"
+                      value="Not sure"
                       required=""
                       data-parsley-group="block-1"
                     />
@@ -711,7 +711,7 @@
                     id="access-no"
                     type="radio"
                     name="access-options"
-                    value="no"
+                    value="No"
                     data-parsley-group="block-1"
                   />
                   <label class="usa-radio__label" for="access-no"
@@ -724,7 +724,7 @@
                     id="access-yes"
                     type="radio"
                     name="access-options"
-                    value="yes"
+                    value="Yes"
                     required=""
                     data-parsley-group="block-1"
                   />
@@ -737,7 +737,7 @@
 
         <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-6 tablet-lg:padding-left-2">
             <label class="usa-label" for="access-needs">If you selected yes in the previous question, please explain</label>
-            <input class="usa-input" type="text" class="form-control" name="access-needs" id="access-needs" data-parsley-group="block-1">
+            <input class="usa-input form-control" type="text" name="access-needs" id="access-needs" data-parsley-group="block-1">
         </div>
     </div>
 
@@ -786,24 +786,24 @@
 
     <div class="grid-row">
         <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
-            <label class="usa-label" for="emer-firstname">First name <span>*</span></label>
-            <input class="usa-input" type="text" class="form-control" name="emer-firstname" id="emer-firstname" required="" data-parsley-group="block-1">
+            <label class="usa-label" for="emer-name">Name <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="emer-name" id="emer-name" required="" data-parsley-group="block-1">
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="emer-email">Email <span>*</span></label>
-            <input class="usa-input" type="emer-email" class="form-control" name="emer-email" id="emer-email" required="" data-parsley-group="block-1">
+            <input class="usa-input form-control" type="emer-email" name="emer-email" id="emer-email" required="" data-parsley-group="block-1">
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
             <label class="usa-label" for="emer-phone">Phone <span>*</span></label>
-            <input class="usa-input" type="text" class="form-control" name="emer-phone" id="emer-phone" required="" data-parsley-group="block-1">
+            <input class="usa-input form-control" type="text" name="emer-phone" id="emer-phone" required="" data-parsley-group="block-1">
         </div>
     </div>
 
-</div> -->
+</div>
 
-                        <!-- <div class="form-section">
+                        <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-2">
         <div class="grid-container">
@@ -854,32 +854,32 @@
         <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="affiliation">Select affiliation you have with VHA <span>*</span></label>
             <select class="usa-select" name="affiliation" id="affiliation" required="" data-parsley-group="block-2">
-                <option value="staff">VHA staff</option>
-                <option value="faculty">VHA faculty</option>
-                <option value="alum">VHA alum</option>
-                <option value="none" selected="selected">No affiliation</option>
+                <option value="VHA staff">VHA staff</option>
+                <option value="VHA faculty">VHA faculty</option>
+                <option value="VHA alum">VHA alum</option>
+                <option value="No affiliation" selected="selected">No affiliation</option>
             </select>
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
             <select class="usa-select" name="preferred-contact" id="preferred-contact" required="" data-parsley-group="block-2">
-                <option value="text-preferred" selected="selected">Phone / text</option>
-                <option value="email-preferred">Email</option>
+                <option value="Phone / text" selected="selected">Phone / text</option>
+                <option value="Email">Email</option>
             </select>
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
             <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2">
-                <option value="friend" selected="selected">Friend</option>
-                <option value="email">Email</option>
-                <option value="social_media">Social media</option>
-                <option value="prof">Professor / School</option>
-                <option value="coworker">Coworker</option>
-                <option value="news">Hacking Medicine Newsletter</option>
-                <option value="website">Hacking Medicine Website</option>
-                <option value="vha">Veteran's Health Administration</option>
+                <option value="Friend" selected="selected">Friend</option>
+                <option value="Email">Email</option>
+                <option value="Social_media">Social media</option>
+                <option value="Professor / School">Professor / School</option>
+                <option value="Coworker">Coworker</option>
+                <option value="Hacking Medicine Newsletter">Hacking Medicine Newsletter</option>
+                <option value="Hacking Medicine Website">Hacking Medicine Website</option>
+                <option value="Veteran's Health Administration">Veteran's Health Administration</option>
             </select>
         </div>
     </div>
@@ -894,7 +894,7 @@
                     id="sponsor-no"
                     type="radio"
                     name="sponsor-options"
-                    value="no"
+                    value="No"
                     data-parsley-group="block-2"
                   />
                   <label class="usa-radio__label" for="sponsor-no"
@@ -907,7 +907,7 @@
                     id="sponsor-yes"
                     type="radio"
                     name="sponsor-options"
-                    value="yes"
+                    value="Yes"
                     required=""
                     data-parsley-group="block-2"
                   />
@@ -927,7 +927,7 @@
                     id="hackathon-no"
                     type="radio"
                     name="hackathon-options"
-                    value="no"
+                    value="No"
                     data-parsley-group="block-2"
                   />
                   <label class="usa-radio__label" for="hackathon-no"
@@ -940,7 +940,7 @@
                     id="hackathon-yes"
                     type="radio"
                     name="hackathon-options"
-                    value="yes"
+                    value="Yes"
                     required=""
                     data-parsley-group="block-2"
                   />
@@ -972,49 +972,49 @@
         <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="tech_skills">Please check off any technical skills you are proficient in. </label>
             <select class="usa-select" name="tech_skills" id="tech_skills" required="" data-parsley-group="block-2" multiple>
-                <option value="fullstack">Front-end (includes UI/UX) / Back-end Development</option>
-                <option value="data_analytics">Data Analytics / Mining</option>
-                <option value="mkt_analytics">Business / Market Analytics</option>
-                <option value="econ_analytics">Economic Analytics</option>
-                <option value="marketing">Business Development / Marketing</option>
-                <option value="sci_dev">Scientific Research / Development</option>
-                <option value="man_qc">Manufacturing and Quality Control</option>
-                <option value="reg_qc">Regulatory and Risk Management</option>
-                <option value="operations">Operations and Supply Chain Management</option>
+                <option value="Front-end (includes UI/UX) / Back-end Development">Front-end (includes UI/UX) / Back-end Development</option>
+                <option value="Data Analytics / Mining">Data Analytics / Mining</option>
+                <option value="Business / Market Analytics">Business / Market Analytics</option>
+                <option value="Economic Analytics">Economic Analytics</option>
+                <option value="Business Development / Marketing">Business Development / Marketing</option>
+                <option value="Scientific Research / Development">Scientific Research / Development</option>
+                <option value="Manufacturing and Quality Control">Manufacturing and Quality Control</option>
+                <option value="Regulatory and Risk Management ">Regulatory and Risk Management</option>
+                <option value="Operations and Supply Chain Management ">Operations and Supply Chain Management</option>
             </select>
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="team_skills">Please check off any team-based skills you have.</label>
             <select class="usa-select" name="team_skills" id="team_skills" required="" data-parsley-group="block-2" multiple>
-                <option value="assertive">Assertive</option>
-                <option value="active-listener" selected="selected">Active Listener</option>
-                <option value="conflict-mgmt">Conflict Management</option>
-                <option value="creative-thinker">Creative Thinker</option>
-                <option value="influential">Influential</option>
-                <option value="multitasking">Multitasking</option>
-                <option value="organized">Organized</option>
-                <option value="patient">Patient</option>
-                <option value="questioning">Questioning</option>
-                <option value="receptive">Receptive</option>
-                <option value="reliable">Reliable</option>
-                <option value="supportive">Supportive</option>
-                <option value="team-player">Team Player</option>
+                <option value="Assertive">Assertive</option>
+                <option value="Active Listener" selected="selected">Active Listener</option>
+                <option value="Conflict Management">Conflict Management</option>
+                <option value="Creative Thinker">Creative Thinker</option>
+                <option value="Influential">Influential</option>
+                <option value="Multitasking">Multitasking</option>
+                <option value="Organized">Organized</option>
+                <option value="Patient">Patient</option>
+                <option value="Questioning">Questioning</option>
+                <option value="Receptive">Receptive</option>
+                <option value="Reliable">Reliable</option>
+                <option value="Supportive">Supportive</option>
+                <option value="Team Player">Team Player</option>
             </select>
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
-            <label class="usa-label" for="hear_about_us">Please check off any clinical skills you have <span>*</span></label>
-            <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2" multiple>
-                <option value="cdm" selected="selected">Clinical Data Management</option>
-                <option value="cq0c">Clinical Quality and Outcome Control</option>
-                <option value="ic">Insurance Coding</option>
-                <option value="lt">Lab Technician</option>
-                <option value="np">Nurse Practitioner</option>
-                <option value="pa">Paramedic</option>
-                <option value="ph">Pharmacist</option>
-                <option value="phda">Physician / Dental Assistant</option>
-                <option value="sp">Specialist (dentistry, ENT, primary care, psychiatry, oncology, etc.) Therapist</option>
+            <label class="usa-label" for="clinical_skills">Please check off any clinical skills you have <span>*</span></label>
+            <select class="usa-select" name="clinical_skills" id="clinical_skills" required="" data-parsley-group="block-2" multiple>
+                <option value="Clinical Data Management" selected="selected">Clinical Data Management</option>
+                <option value="Clinical Quality and Outcome Control">Clinical Quality and Outcome Control</option>
+                <option value="Insurance Coding">Insurance Coding</option>
+                <option value="Lab Technician">Lab Technician</option>
+                <option value="Nurse Practitioner">Nurse Practitioner</option>
+                <option value="Paramedic">Paramedic</option>
+                <option value="Pharmacist">Pharmacist</option>
+                <option value="Physician / Dental Assistant">Physician / Dental Assistant</option>
+                <option value="Specialist (dentistry, ENT, primary care, psychiatry, oncology, etc.) Therapist">Specialist (dentistry, ENT, primary care, psychiatry, oncology, etc.) Therapist</option>
             </select>
         </div>
     </div>
@@ -1037,9 +1037,9 @@
         </div>
     </div>
 
-</div> -->
+</div>
 
-                        <!-- <div class="form-section">
+                        <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-3">
         <div class="grid-container">
@@ -1089,14 +1089,14 @@
     <div class="grid-row tablet-lg:padding-top-4">
         <div class="grid-col-12">
             <div class="usa-form-group">
-                <label class="usa-label" for="exp-skills-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
+                <label class="usa-label" for="healthcare-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
                 <textarea
                 class="usa-textarea margin-top-2"
-                id="exp-skills-textarea"
-                name="exp-skills-textarea"
-                maxlength="100"
+                id="healthcare-textarea"
+                name="healthcare-textarea"
+                maxlength="300"
                 rows="6"
-                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                aria-describedby="healthcare-textarea-info healthcare-textarea-hint"
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -1107,14 +1107,14 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <div class="usa-form-group">
-                <label class="usa-label" for="exp-skills-textarea">What are three things you are hoping to gain from this experience? <span>*</span></label>
+                <label class="usa-label" for="exp-gain-textarea">What are three things you are hoping to gain from this experience? <span>*</span></label>
                 <textarea
                 class="usa-textarea margin-top-2"
-                id="exp-skills-textarea"
-                name="exp-skills-textarea"
-                maxlength="100"
+                id="exp-gain-textarea"
+                name="exp-gain-textarea"
+                maxlength="300"
                 rows="6"
-                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                aria-describedby="exp-gain-textarea-info exp-gain-textarea-hint"
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -1125,14 +1125,14 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <div class="usa-form-group">
-                <label class="usa-label" for="exp-skills-textarea">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity? <span>*</span></label>
+                <label class="usa-label" for="views-textarea">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity? <span>*</span></label>
                 <textarea
                 class="usa-textarea margin-top-2"
-                id="exp-skills-textarea"
-                name="exp-skills-textarea"
-                maxlength="100"
+                id="views-textarea"
+                name="views-textarea"
+                maxlength="300"
                 rows="6"
-                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                aria-describedby="views-textarea-info views-textarea-hint"
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -1149,8 +1149,8 @@
                     class="usa-radio__input"
                     id="hackathon-no"
                     type="radio"
-                    name="hackathon-options"
-                    value="no"
+                    name="hack-options"
+                    value="No"
                     data-parsley-group="block-3"
                 />
                 <label class="usa-radio__label" for="hackathon-no"
@@ -1162,8 +1162,8 @@
                     class="usa-radio__input"
                     id="hackathon-yes"
                     type="radio"
-                    name="hackathon-options"
-                    value="yes"
+                    name="hack-options"
+                    value="Yes"
                     required=""
                     data-parsley-group="block-3"
                 />
@@ -1183,9 +1183,10 @@
                     class="usa-checkbox__input"
                     id="check-acknowledge"
                     type="checkbox"
-                    name="acknowledge-option"
-                    value="acknowledge"
+                    name="check-acknowledge"
+                    value="Yes"
                     required=""
+                    data-parsley-group="block-3"
                   />
                   <label class="usa-checkbox__label" for="check-acknowledge">Yes</label>
                 </div>
@@ -1193,7 +1194,7 @@
         </div>
 
     </div>
-</div> -->
+</div>
 
                         <div class="form-section confirmation-page">
 
@@ -1305,7 +1306,7 @@
                         <td id="results_school_company"></td>
                     </tr>
                     <tr>
-                        <th scope="row">Job Title:</th>
+                        <th scope="row">Job Title</th>
                         <td id="results_job_title"></td>
                     </tr>
                     <tr>
@@ -1330,6 +1331,127 @@
                         <th colspan="2">Logistics</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Will you be traveling from outside the United States to attend this event?</th>
+                        <td id="results_travel-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Will you require a room in our hotel block (we will hold a block of rooms in a local hotel and you can pay to stay as you wish).</th>
+                        <td id="results_hotel-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Do you have any accessibility needs that require accommodation for the Hackathon?</th>
+                        <td id="results_access-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If you selected yes in the previous question, please explain</th>
+                        <td id="results_access_needs"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">T-shirt size</th>
+                        <td id="results_tshirt"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please list your dietary preferences</th>
+                        <td id="results_diet"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Emergency Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td id="results_emer-name"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td id="results_emer-email"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone</th>
+                        <td id="results_emer-phone"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Additional Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Select affiliation you have with VHA</th>
+                        <td id="results_affiliation"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What is your preferred mode of contact during the hackathon?</th>
+                        <td id="results_preferred-contact"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">How did you hear about this event?</th>
+                        <td id="results_hear_about_us"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">In the future, would you like to be contacted by our sponsors for
+                            opportunities that may be of interest to you?</th>
+                        <td id="results_sponsor-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Have you been to healthcare hackathon before?</th>
+                        <td id="results_hackathon-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If yes, please list the names and years of the hackathons you've attended</th>
+                        <td id="results_hack-exp-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please check off any technical skills you are proficient in.</th>
+                        <td id="results_tech_skills"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please check off any team-based skills you have.</th>
+                        <td id="results_team_skills"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please check off any clinical skills you have</th>
+                        <td id="results_clinical_skills"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please briefly describe your experience and skills.</th>
+                        <td id="results_exp-skills-textarea"></td>
+                    </tr>
+                    
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Questions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Tell us about a healthcare problem that you care about.</th>
+                        <td id="results_healthcare-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What are three things you are hoping to gain from this experience?</th>
+                        <td id="results_exp-gain-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity?</th>
+                        <td id="results_views-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Can you make the entire event?</th>
+                        <td id="results_hack-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Photography acknowledgement</th>
+                        <td id="results_check-acknowledge"></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>

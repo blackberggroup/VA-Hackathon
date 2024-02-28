@@ -128,7 +128,7 @@ section.form-fields {
         opacity: 1;
     }
 
-    textarea[name="hack-exp-textarea"], textarea[name="exp-skills-textarea"] {
+    textarea[name="hack-exp-textarea"], textarea[name="exp-skills-textarea"], textarea[name="healthcare-textarea"], textarea[name="exp-gain-textarea"], textarea[name="views-textarea"] {
         width: 100%;
         height: 132px;
         padding: 5px;
@@ -198,5 +198,12 @@ section.form-fields {
         content: "Select all that apply" !important;
         visibility: visible;
         color: #000;
+    }
+
+    .usa-table {
+        tbody th, tbody td {
+            text-align: left;
+            vertical-align: top;
+        }
     }
 }

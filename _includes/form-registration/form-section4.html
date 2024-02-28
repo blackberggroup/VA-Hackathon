@@ -48,14 +48,14 @@
     <div class="grid-row tablet-lg:padding-top-4">
         <div class="grid-col-12">
             <div class="usa-form-group">
-                <label class="usa-label" for="exp-skills-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
+                <label class="usa-label" for="healthcare-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
                 <textarea
                 class="usa-textarea margin-top-2"
-                id="exp-skills-textarea"
-                name="exp-skills-textarea"
-                maxlength="100"
+                id="healthcare-textarea"
+                name="healthcare-textarea"
+                maxlength="300"
                 rows="6"
-                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                aria-describedby="healthcare-textarea-info healthcare-textarea-hint"
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -66,14 +66,14 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <div class="usa-form-group">
-                <label class="usa-label" for="exp-skills-textarea">What are three things you are hoping to gain from this experience? <span>*</span></label>
+                <label class="usa-label" for="exp-gain-textarea">What are three things you are hoping to gain from this experience? <span>*</span></label>
                 <textarea
                 class="usa-textarea margin-top-2"
-                id="exp-skills-textarea"
-                name="exp-skills-textarea"
-                maxlength="100"
+                id="exp-gain-textarea"
+                name="exp-gain-textarea"
+                maxlength="300"
                 rows="6"
-                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                aria-describedby="exp-gain-textarea-info exp-gain-textarea-hint"
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -84,14 +84,14 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12">
             <div class="usa-form-group">
-                <label class="usa-label" for="exp-skills-textarea">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity? <span>*</span></label>
+                <label class="usa-label" for="views-textarea">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity? <span>*</span></label>
                 <textarea
                 class="usa-textarea margin-top-2"
-                id="exp-skills-textarea"
-                name="exp-skills-textarea"
-                maxlength="100"
+                id="views-textarea"
+                name="views-textarea"
+                maxlength="300"
                 rows="6"
-                aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                aria-describedby="views-textarea-info views-textarea-hint"
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -108,8 +108,8 @@
                     class="usa-radio__input"
                     id="hackathon-no"
                     type="radio"
-                    name="hackathon-options"
-                    value="no"
+                    name="hack-options"
+                    value="No"
                     data-parsley-group="block-3"
                 />
                 <label class="usa-radio__label" for="hackathon-no"
@@ -121,8 +121,8 @@
                     class="usa-radio__input"
                     id="hackathon-yes"
                     type="radio"
-                    name="hackathon-options"
-                    value="yes"
+                    name="hack-options"
+                    value="Yes"
                     required=""
                     data-parsley-group="block-3"
                 />
@@ -142,9 +142,10 @@
                     class="usa-checkbox__input"
                     id="check-acknowledge"
                     type="checkbox"
-                    name="acknowledge-option"
-                    value="acknowledge"
+                    name="check-acknowledge"
+                    value="Yes"
                     required=""
+                    data-parsley-group="block-3"
                   />
                   <label class="usa-checkbox__label" for="check-acknowledge">Yes</label>
                 </div>
