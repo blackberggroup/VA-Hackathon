@@ -3,7 +3,7 @@
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-0">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
-                <div class="grid-col-10 tablet-lg:grid-col-8 tablet-lg:grid-offset-1">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
                     <div class="usa-step-indicator usa-step-indicator--counters"
                     aria-label="progress">
                         <ol class="usa-step-indicator__segments">
@@ -46,29 +46,29 @@
     </div>
 
     <div class="grid-row">
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1">
             <label class="usa-label" for="firstname">First name <span>*</span></label>
             <input class="usa-input form-control" type="text" name="firstname" id="firstname" required="" data-parsley-group="block-0">
         </div>
     
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="lastname">Last name <span>*</span></label>
             <input class="usa-input form-control" type="text" name="lastname" id="lastname" required="" data-parsley-group="block-0">
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="email">Email <span>*</span></label>
             <input class="usa-input form-control" type="email" name="email" id="email" required="" data-parsley-group="block-0">
         </div>
     </div>
 
     <div class="grid-row padding-top-2">
-        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="phone">Phone <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="phone" id="phone" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="phone" id="phone" required="" data-parsley-type="digits" data-parsley-group="block-0">
         </div>
     
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:padding-left-1 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="age">Age <span>*</span></label>
             <select class="usa-select" name="age" id="age" required="" data-parsley-group="block-0">
                 <option value="18_24" selected="selected">18-24</option>
@@ -80,7 +80,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="pronoun">Preferred Pronoun <span>*</span></label>
             <select class="usa-select" name="pronoun" id="pronoun" required="" data-parsley-group="block-0">
                 <option value="He" selected="selected">He</option>
@@ -94,23 +94,23 @@
     </div>
 
     <div class="grid-row tablet-lg:padding-top-2">
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="country">Country of Residence <span>*</span></label>
             <input class="usa-input form-control" type="text" name="country" id="country" required="" data-parsley-group="block-0">
         </div>
     
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="state">State</label>
             <input class="usa-input form-control" type="text" name="state" id="state" data-parsley-group="block-0">
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="city">City</label>
             <input class="usa-input form-control" type="text" name="city" id="city" data-parsley-group="block-0">
         </div>
     </div>
 
-    <div class="grid-row padding-y-5">
+    <div class="grid-row padding-top-8">
         <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="ethnicity">Which of the following best describes your ethnic background? <span>*</span></label>
             <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0" multiple>
@@ -132,8 +132,8 @@
         </div>
     </div>
 
-    <div class="grid-row padding-top-2">
-        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Are you active duty or a Veteran of the United States Military? <span>*</span></legend>
                 <div class="usa-radio">
@@ -143,7 +143,9 @@
                     type="radio"
                     name="vet-options"
                     value="No"
+                    tabindex="0"
                     data-parsley-group="block-0"
+                    data-parsley-errors-container="#vet-required-msg"
                   />
                   <label class="usa-radio__label" for="vet-no">No</label>
                 </div>
@@ -154,15 +156,18 @@
                     type="radio"
                     name="vet-options"
                     value="Yes"
+                    tabindex="0"
                     required=""
                     data-parsley-group="block-0"
+                    data-parsley-errors-container="#vet-required-msg"
                   />
                   <label class="usa-radio__label" for="vet-yes">Yes</label>
+                  <div id="vet-required-msg"></div>
                 </div>
             </fieldset>
         </div>
     
-        <div class="grid-col-12 padding-top-3 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-3 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="occupation">What is your occupation? <span>*</span></label>
             <select class="usa-select" name="occupation" id="occupation" required="" data-parsley-group="block-0">
                 <option value="Student">Student</option>
@@ -170,21 +175,21 @@
             </select>
         </div>
 
-        <div class="grid-col-12 padding-top-3 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
+        <div class="grid-col-12 padding-top-3 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="school">School / Company <span>*</span></label>
             <input class="usa-input form-control" type="text" name="school" id="school" required="" data-parsley-group="block-0">
             <p class="sub-label">Write “N/A” if not applicable.</p>
         </div>
     </div>
 
-    <div class="grid-row padding-top-2">
-        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12 tablet:grid-col-6 tablet:padding-right-1 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="job_title">Job Title <span>*</span></label>
             <input class="usa-input form-control" type="text" name="job_title" id="job_title" required="" data-parsley-group="block-0">
             <p class="sub-label">If you are a student, please put the degree being sought and the focus of your program (e.g. "MBA with a concentration in Innovation & Entrepreneurship").</p>
         </div>
 
-        <div class="grid-col-12 padding-top-3 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-3 tablet:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="primary_background">What is your primary background? <span>*</span></label>
             <select class="usa-select" name="primary_background" id="primary_background" required="" data-parsley-group="block-0">
                 <option value="Business / Finance" selected="selected">Business / Finance</option>
@@ -217,14 +222,14 @@
         </div>
     </div>
 
-    <div class="grid-row padding-top-2">
-        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="resume">Link to Resume</label>
             <input class="usa-input form-control" type="text" name="resume" id="resume" data-parsley-group="block-0">
             <p class="sub-label">Please provide a link (Google Drive, Dropbox, etc.) to a PDF of your resume. Please note that resume information may be shared with VHA Tamp Hackathon sponsors.</p>
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="linkedin">LinkedIn Profile URL</label>
             <input class="usa-input form-control" type="text" name="linkedin" id="linkedin" data-parsley-group="block-0">
         </div>

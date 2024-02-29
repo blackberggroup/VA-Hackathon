@@ -3,7 +3,7 @@
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-1">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
-                <div class="grid-col-10 tablet-lg:grid-col-8 tablet-lg:grid-offset-1">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
                     <div class="usa-step-indicator usa-step-indicator--counters"
                     aria-label="progress">
                         <ol class="usa-step-indicator__segments">
@@ -57,10 +57,9 @@
                     name="travel-options"
                     value="No"
                     data-parsley-group="block-1"
+                    data-parsley-errors-container="#travel-required-msg"
                   />
-                  <label class="usa-radio__label" for="travel-no"
-                    >No</label
-                  >
+                  <label class="usa-radio__label" for="travel-no">No</label>
                 </div>
                 <div class="usa-radio">
                   <input
@@ -70,10 +69,9 @@
                     name="travel-options"
                     value="Yes"
                     data-parsley-group="block-1"
+                    data-parsley-errors-container="#travel-required-msg"
                   />
-                  <label class="usa-radio__label" for="travel-yes"
-                    >Yes</label
-                  >
+                  <label class="usa-radio__label" for="travel-yes">Yes</label>
                 </div>
                 <div class="usa-radio">
                     <input
@@ -84,10 +82,10 @@
                       value="Yes, and I require a visa"
                       required=""
                       data-parsley-group="block-1"
+                      data-parsley-errors-container="#travel-required-msg"
                     />
-                    <label class="usa-radio__label" for="travel-yes_visa"
-                      >Yes, and I require a visa</label
-                    >
+                    <label class="usa-radio__label" for="travel-yes_visa">Yes, and I require a visa</label>
+                    <div id="travel-required-msg"></div>
                 </div>
             </fieldset>
         </div>
@@ -103,10 +101,9 @@
                     name="hotel-options"
                     value="No"
                     data-parsley-group="block-1"
+                    data-parsley-errors-container="#hotel-required-msg"
                   />
-                  <label class="usa-radio__label" for="hotel-no"
-                    >No</label
-                  >
+                  <label class="usa-radio__label" for="hotel-no">No</label>
                 </div>
                 <div class="usa-radio">
                   <input
@@ -116,10 +113,9 @@
                     name="hotel-options"
                     value="Yes"
                     data-parsley-group="block-1"
+                    data-parsley-errors-container="#hotel-required-msg"
                   />
-                  <label class="usa-radio__label" for="hotel-yes"
-                    >Yes</label
-                  >
+                  <label class="usa-radio__label" for="hotel-yes">Yes</label>
                 </div>
                 <div class="usa-radio">
                     <input
@@ -130,10 +126,10 @@
                       value="Not sure"
                       required=""
                       data-parsley-group="block-1"
+                      data-parsley-errors-container="#hotel-required-msg"
                     />
-                    <label class="usa-radio__label" for="hotel-not_sure"
-                      >Not sure</label
-                    >
+                    <label class="usa-radio__label" for="hotel-not_sure">Not sure</label>
+                    <div id="hotel-required-msg"></div>
                 </div>
             </fieldset>
         </div>
@@ -151,10 +147,9 @@
                     name="access-options"
                     value="No"
                     data-parsley-group="block-1"
+                    data-parsley-errors-container="#access-required-msg"
                   />
-                  <label class="usa-radio__label" for="access-no"
-                    >No</label
-                  >
+                  <label class="usa-radio__label" for="access-no">No</label>
                 </div>
                 <div class="usa-radio">
                   <input
@@ -165,10 +160,10 @@
                     value="Yes"
                     required=""
                     data-parsley-group="block-1"
+                    data-parsley-errors-container="#access-required-msg"
                   />
-                  <label class="usa-radio__label" for="access-yes"
-                    >Yes</label
-                  >
+                  <label class="usa-radio__label" for="access-yes">Yes</label>
+                  <div id="access-required-msg"></div>
                 </div>
             </fieldset>
         </div>
@@ -223,17 +218,17 @@
     </div>
 
     <div class="grid-row">
-        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="emer-name">Name <span>*</span></label>
             <input class="usa-input form-control" type="text" name="emer-name" id="emer-name" required="" data-parsley-group="block-1">
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="emer-email">Email <span>*</span></label>
             <input class="usa-input form-control" type="emer-email" name="emer-email" id="emer-email" required="" data-parsley-group="block-1">
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="emer-phone">Phone <span>*</span></label>
             <input class="usa-input form-control" type="text" name="emer-phone" id="emer-phone" required="" data-parsley-group="block-1">
         </div>

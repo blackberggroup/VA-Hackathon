@@ -221,4 +221,12 @@ function MultiselectDropdown(options){
 
 window.addEventListener('load',()=>{
   MultiselectDropdown(window.MultiselectDropdownOptions);
+  $('.multiselect-dropdown').attr("tabindex","0");
+  $(".multiselect-dropdown").keydown(function(e){
+    if(e.which === 13 || e.which === 32){
+      $(this).click();
+    }
+  });
 });
+
+

@@ -3,7 +3,7 @@
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-2">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
-                <div class="grid-col-10 tablet-lg:grid-col-8 tablet-lg:grid-offset-1">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
                     <div class="usa-step-indicator usa-step-indicator--counters"
                     aria-label="progress">
                         <ol class="usa-step-indicator__segments">
@@ -45,8 +45,8 @@
         </div>
     </div>
 
-    <div class="grid-row tablet-lg:padding-top-4">
-        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+    <div class="grid-row tablet-lg:padding-top-2">
+        <div class="grid-col-12 padding-top-4 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="affiliation">Select affiliation you have with VHA <span>*</span></label>
             <select class="usa-select" name="affiliation" id="affiliation" required="" data-parsley-group="block-2">
                 <option value="VHA staff">VHA staff</option>
@@ -56,7 +56,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
             <select class="usa-select" name="preferred-contact" id="preferred-contact" required="" data-parsley-group="block-2">
                 <option value="Phone / text" selected="selected">Phone / text</option>
@@ -64,7 +64,7 @@
             </select>
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
             <select class="usa-select" name="hear_about_us" id="hear_about_us" required="" data-parsley-group="block-2">
                 <option value="Friend" selected="selected">Friend</option>
@@ -91,10 +91,9 @@
                     name="sponsor-options"
                     value="No"
                     data-parsley-group="block-2"
+                    data-parsley-errors-container="#sponsor-required-msg"
                   />
-                  <label class="usa-radio__label" for="sponsor-no"
-                    >No</label
-                  >
+                  <label class="usa-radio__label" for="sponsor-no">No</label>
                 </div>
                 <div class="usa-radio">
                   <input
@@ -105,10 +104,10 @@
                     value="Yes"
                     required=""
                     data-parsley-group="block-2"
+                    data-parsley-errors-container="#sponsor-required-msg"
                   />
-                  <label class="usa-radio__label" for="sponsor-yes"
-                    >Yes</label
-                  >
+                  <label class="usa-radio__label" for="sponsor-yes">Yes</label>
+                  <div id="#sponsor-required-msg"></div>
                 </div>
             </fieldset>
         </div>
@@ -124,10 +123,9 @@
                     name="hackathon-options"
                     value="No"
                     data-parsley-group="block-2"
+                    data-parsley-errors-container="#hack-required-msg"
                   />
-                  <label class="usa-radio__label" for="hackathon-no"
-                    >No</label
-                  >
+                  <label class="usa-radio__label" for="hackathon-no">No</label>
                 </div>
                 <div class="usa-radio">
                   <input
@@ -138,10 +136,10 @@
                     value="Yes"
                     required=""
                     data-parsley-group="block-2"
+                    data-parsley-errors-container="#hack-required-msg"
                   />
-                  <label class="usa-radio__label" for="hackathon-yes"
-                    >Yes</label
-                  >
+                  <label class="usa-radio__label" for="hackathon-yes">Yes</label>
+                  <div id="#hack-required-msg"></div>
                 </div>
             </fieldset>
         </div>
@@ -163,7 +161,7 @@
         </div>
     </div>
 
-    <div class="grid-row padding-top-2 tablet-lg:padding-top-4">
+    <div class="grid-row padding-top-2 tablet-lg:padding-top-8">
         <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="tech_skills">Please check off any technical skills you are proficient in. </label>
             <select class="usa-select" name="tech_skills" id="tech_skills" required="" data-parsley-group="block-2" multiple>

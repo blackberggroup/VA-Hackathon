@@ -13,6 +13,10 @@ section.masthead-sub {
         color: #fff !important;
     }
 
+    .usa-breadcrumb__link {
+        color: #fff !important;
+    }
+
     @supports ((-webkit-mask:url()) or (mask:url())) {
         .usa-breadcrumb__list-item:not(:last-child)::after {
             mask-size: 1.5ex 1.5ex !important;
@@ -65,6 +69,10 @@ section.form-fields {
 
     input, select, textarea {
         border: 1px solid #1B1B1B !important;
+    }
+
+    input.usa-button {
+        border: none !important;
     }
 
     label, legend {
@@ -246,5 +254,18 @@ section.form-fields {
 
     .usa-checkbox__label {
         padding-left: 1.6rem !important;
+    }
+
+    .usa-radio__input {
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-flex;
+        margin: 6px 8px 0 0;
+    }
+
+    .usa-radio__label {
+        margin-top: -10px;
+        vertical-align: middle;
+        display: inline-flex;
     }
 }

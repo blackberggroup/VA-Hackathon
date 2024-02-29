@@ -3,7 +3,7 @@
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-3">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
-                <div class="grid-col-10 tablet-lg:grid-col-8 tablet-lg:grid-offset-1">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
                     <div class="usa-step-indicator usa-step-indicator--counters"
                     aria-label="progress">
                         <ol class="usa-step-indicator__segments">
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div class="grid-row tablet-lg:padding-top-4">
+    <div class="grid-row tablet-lg:padding-top-2">
         <div class="grid-col-12">
             <div class="usa-form-group">
                 <label class="usa-label" for="healthcare-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
@@ -56,6 +56,7 @@
                 maxlength="300"
                 rows="6"
                 aria-describedby="healthcare-textarea-info healthcare-textarea-hint"
+                required=""
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -74,6 +75,7 @@
                 maxlength="300"
                 rows="6"
                 aria-describedby="exp-gain-textarea-info exp-gain-textarea-hint"
+                required=""
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -92,6 +94,7 @@
                 maxlength="300"
                 rows="6"
                 aria-describedby="views-textarea-info views-textarea-hint"
+                required=""
                 data-parsley-group="block-3"
                 ></textarea>
             </div>
@@ -111,6 +114,7 @@
                     name="hack-options"
                     value="No"
                     data-parsley-group="block-3"
+                    
                 />
                 <label class="usa-radio__label" for="hackathon-no"
                     >No</label
@@ -125,10 +129,12 @@
                     value="Yes"
                     required=""
                     data-parsley-group="block-3"
+                    
                 />
                 <label class="usa-radio__label" for="hackathon-yes"
                     >Yes</label
                 >
+                <div id="#event-required-msg"></div>
                 </div>
             </fieldset>
             <p class="sub-label">The event takes place from 4pm-10pm Friday May 17th, 8am-10pm Saturday May 16th, and 8am-2pm Sunday May 17th [times are approximate Eastern Time].</p>
