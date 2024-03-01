@@ -326,7 +326,7 @@
 
                     <form class="usa-form form-registration" data-parsley-validate>
  
-                        <!-- <div class="form-section">
+                        <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-0">
         <div class="grid-container">
@@ -376,29 +376,29 @@
     <div class="grid-row">
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1">
             <label class="usa-label" for="firstname">First name <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="firstname" id="firstname" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="firstname" id="firstname" data-parsley-required data-parsley-group="block-0">
         </div>
     
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="lastname">Last name <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="lastname" id="lastname" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="lastname" id="lastname" data-parsley-required data-parsley-group="block-0">
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="email">Email <span>*</span></label>
-            <input class="usa-input form-control" type="email" name="email" id="email" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="email" name="email" id="email" data-parsley-required data-parsley-group="block-0">
         </div>
     </div>
 
     <div class="grid-row padding-top-2">
         <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="phone">Phone <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="phone" id="phone" required="" data-parsley-type="digits" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="phone" id="phone" data-parsley-required data-parsley-type="digits" data-parsley-group="block-0">
         </div>
     
         <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:padding-left-1 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="age">Age <span>*</span></label>
-            <select class="usa-select" name="age" id="age" required="" data-parsley-group="block-0">
+            <select class="usa-select" name="age" id="age" data-parsley-required data-parsley-group="block-0">
                 <option value="18_24" selected="selected">18-24</option>
                 <option value="25_34">25-34</option>
                 <option value="35_44">35-44</option>
@@ -410,7 +410,7 @@
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="pronoun">Preferred Pronoun <span>*</span></label>
-            <select class="usa-select" name="pronoun" id="pronoun" required="" data-parsley-group="block-0">
+            <select class="usa-select" name="pronoun" id="pronoun" data-parsley-required data-parsley-group="block-0">
                 <option value="He" selected="selected">He</option>
                 <option value="She">She</option>
                 <option value="They">They</option>
@@ -424,7 +424,7 @@
     <div class="grid-row tablet-lg:padding-top-2">
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="country">Country of Residence <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="country" id="country" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="country" id="country" data-parsley-required data-parsley-group="block-0">
         </div>
     
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
@@ -441,7 +441,7 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="ethnicity">Which of the following best describes your ethnic background? <span>*</span></label>
-            <select class="usa-select" name="ethnicity" id="ethnicity" required="" data-parsley-group="block-0" multiple>
+            <select class="usa-select" name="ethnicity" id="ethnicity" data-parsley-required data-parsley-group="block-0" multiple>
                 <option value="American Indian or Alaska Native" selected="selected">American Indian or Alaska Native
                 </option>
                 <option value="Asian">Asian</option>
@@ -485,7 +485,7 @@
                     name="vet-options"
                     value="Yes"
                     tabindex="0"
-                    required=""
+                    data-parsley-required
                     data-parsley-group="block-0"
                     data-parsley-errors-container="#vet-required-msg"
                   />
@@ -497,7 +497,7 @@
     
         <div class="grid-col-12 padding-top-3 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="occupation">What is your occupation? <span>*</span></label>
-            <select class="usa-select" name="occupation" id="occupation" required="" data-parsley-group="block-0">
+            <select class="usa-select" name="occupation" id="occupation" data-parsley-required data-parsley-group="block-0">
                 <option value="Student">Student</option>
                 <option value="Professional" selected="selected">Professional / Non-student</option>
             </select>
@@ -505,7 +505,7 @@
 
         <div class="grid-col-12 padding-top-3 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="school">School / Company <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="school" id="school" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="school" id="school" data-parsley-required data-parsley-group="block-0">
             <p class="sub-label">Write “N/A” if not applicable.</p>
         </div>
     </div>
@@ -513,13 +513,13 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12 tablet:grid-col-6 tablet:padding-right-1 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="job_title">Job Title <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="job_title" id="job_title" required="" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="job_title" id="job_title" data-parsley-required data-parsley-group="block-0">
             <p class="sub-label">If you are a student, please put the degree being sought and the focus of your program (e.g. "MBA with a concentration in Innovation & Entrepreneurship").</p>
         </div>
 
         <div class="grid-col-12 padding-top-3 tablet:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="primary_background">What is your primary background? <span>*</span></label>
-            <select class="usa-select" name="primary_background" id="primary_background" required="" data-parsley-group="block-0">
+            <select class="usa-select" name="primary_background" id="primary_background" data-parsley-required data-parsley-group="block-0">
                 <option value="Business / Finance" selected="selected">Business / Finance</option>
                 <option value="Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)">Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
                 <option value="Designer (Product, Graphic, Print, etc.)">Designer (Product, Graphic, Print, etc.)</option>
@@ -535,7 +535,7 @@
     
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
             <label class="usa-label" for="additional_background">Additional background areas</label>
-            <select class="usa-select" name="additional_background" id="additional_background" required="" data-parsley-group="block-0" multiple>
+            <select class="usa-select" name="additional_background" id="additional_background" data-parsley-required data-parsley-group="block-0" multiple>
                 <option value="Business / Finance" selected="selected">Business / Finance</option>
                 <option value="Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)">Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
                 <option value="Designer (Product, Graphic, Print, etc.)">Designer (Product, Graphic, Print, etc.)</option>
@@ -563,7 +563,7 @@
         </div>
     </div>
     
-</div>  -->
+</div> 
 
                         <!-- <div class="form-section">
 
@@ -696,8 +696,8 @@
                       data-parsley-errors-container="#hotel-required-msg"
                     />
                     <label class="usa-radio__label" for="hotel-not_sure">Not sure</label>
-                    <div id="hotel-required-msg"></div>
                 </div>
+                <div id="hotel-required-msg"></div>
             </fieldset>
         </div>
     </div>
@@ -730,8 +730,8 @@
                     data-parsley-errors-container="#access-required-msg"
                   />
                   <label class="usa-radio__label" for="access-yes">Yes</label>
-                  <div id="access-required-msg"></div>
                 </div>
+                <div id="access-required-msg"></div>
             </fieldset>
         </div>
 
@@ -748,7 +748,7 @@
                 <option value="XXS">XXS</option>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
-                <option value="M" selected="selected">M</option>
+                <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
                 <option value="2XL">2XL</option>
@@ -764,7 +764,7 @@
                 <option value="Vegetarian">Vegetarian</option>
                 <option value="Vegan">Vegan</option>
                 <option value="Pescatarian">Pescatarian</option>
-                <option value="Omnivore" selected="selected">Omnivore</option>
+                <option value="Omnivore">Omnivore</option>
                 <option value="Paleo">Paleo</option>
                 <option value="Gluten-free">Gluten-free</option>
                 <option value="Dairy-free">Dairy-free</option>
@@ -912,8 +912,8 @@
                     data-parsley-errors-container="#sponsor-required-msg"
                   />
                   <label class="usa-radio__label" for="sponsor-yes">Yes</label>
-                  <div id="#sponsor-required-msg"></div>
                 </div>
+                <div id="sponsor-required-msg"></div>
             </fieldset>
         </div>
 
@@ -944,8 +944,8 @@
                     data-parsley-errors-container="#hack-required-msg"
                   />
                   <label class="usa-radio__label" for="hackathon-yes">Yes</label>
-                  <div id="#hack-required-msg"></div>
                 </div>
+                <div id="hack-required-msg"></div>
             </fieldset>
         </div>
 
@@ -986,7 +986,7 @@
             <label class="usa-label" for="team_skills">Please check off any team-based skills you have.</label>
             <select class="usa-select" name="team_skills" id="team_skills" required="" data-parsley-group="block-2" multiple>
                 <option value="Assertive">Assertive</option>
-                <option value="Active Listener" selected="selected">Active Listener</option>
+                <option value="Active Listener">Active Listener</option>
                 <option value="Conflict Management">Conflict Management</option>
                 <option value="Creative Thinker">Creative Thinker</option>
                 <option value="Influential">Influential</option>
@@ -1004,7 +1004,7 @@
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
             <label class="usa-label" for="clinical_skills">Please check off any clinical skills you have <span>*</span></label>
             <select class="usa-select" name="clinical_skills" id="clinical_skills" required="" data-parsley-group="block-2" multiple>
-                <option value="Clinical Data Management" selected="selected">Clinical Data Management</option>
+                <option value="Clinical Data Management">Clinical Data Management</option>
                 <option value="Clinical Quality and Outcome Control">Clinical Quality and Outcome Control</option>
                 <option value="Insurance Coding">Insurance Coding</option>
                 <option value="Lab Technician">Lab Technician</option>
@@ -1037,7 +1037,7 @@
 
 </div> -->
 
-                        <div class="form-section">
+                        <!-- <div class="form-section">
 
     <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-3">
         <div class="grid-container">
@@ -1146,35 +1146,31 @@
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
                 <div class="usa-radio">
-                <input
-                    class="usa-radio__input"
-                    id="hackathon-no"
-                    type="radio"
-                    name="hack-options"
-                    value="No"
-                    data-parsley-group="block-3"
-                    
-                />
-                <label class="usa-radio__label" for="hackathon-no"
-                    >No</label
-                >
+                    <input
+                        class="usa-radio__input"
+                        id="hackathon-no"
+                        type="radio"
+                        name="hack-options"
+                        value="No"
+                        data-parsley-group="block-3"
+                        data-parsley-errors-container="#event-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hackathon-no">No</label>
                 </div>
                 <div class="usa-radio">
-                <input
-                    class="usa-radio__input"
-                    id="hackathon-yes"
-                    type="radio"
-                    name="hack-options"
-                    value="Yes"
-                    required=""
-                    data-parsley-group="block-3"
-                    
-                />
-                <label class="usa-radio__label" for="hackathon-yes"
-                    >Yes</label
-                >
-                <div id="#event-required-msg"></div>
+                    <input
+                        class="usa-radio__input"
+                        id="hackathon-yes"
+                        type="radio"
+                        name="hack-options"
+                        value="Yes"
+                        required=""
+                        data-parsley-group="block-3"
+                        data-parsley-errors-container="#event-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hackathon-yes">Yes</label>
                 </div>
+                <div id="event-required-msg"></div>
             </fieldset>
             <p class="sub-label">The event takes place from 4pm-10pm Friday May 17th, 8am-10pm Saturday May 16th, and 8am-2pm Sunday May 17th [times are approximate Eastern Time].</p>
         </div>
@@ -1198,7 +1194,7 @@
         </div>
 
     </div>
-</div>
+</div> -->
 
                         <div class="form-section confirmation-page">
 

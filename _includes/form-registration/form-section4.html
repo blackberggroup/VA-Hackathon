@@ -107,35 +107,31 @@
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
                 <div class="usa-radio">
-                <input
-                    class="usa-radio__input"
-                    id="hackathon-no"
-                    type="radio"
-                    name="hack-options"
-                    value="No"
-                    data-parsley-group="block-3"
-                    
-                />
-                <label class="usa-radio__label" for="hackathon-no"
-                    >No</label
-                >
+                    <input
+                        class="usa-radio__input"
+                        id="hackathon-no"
+                        type="radio"
+                        name="hack-options"
+                        value="No"
+                        data-parsley-group="block-3"
+                        data-parsley-errors-container="#event-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hackathon-no">No</label>
                 </div>
                 <div class="usa-radio">
-                <input
-                    class="usa-radio__input"
-                    id="hackathon-yes"
-                    type="radio"
-                    name="hack-options"
-                    value="Yes"
-                    required=""
-                    data-parsley-group="block-3"
-                    
-                />
-                <label class="usa-radio__label" for="hackathon-yes"
-                    >Yes</label
-                >
-                <div id="#event-required-msg"></div>
+                    <input
+                        class="usa-radio__input"
+                        id="hackathon-yes"
+                        type="radio"
+                        name="hack-options"
+                        value="Yes"
+                        required=""
+                        data-parsley-group="block-3"
+                        data-parsley-errors-container="#event-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hackathon-yes">Yes</label>
                 </div>
+                <div id="event-required-msg"></div>
             </fieldset>
             <p class="sub-label">The event takes place from 4pm-10pm Friday May 17th, 8am-10pm Saturday May 16th, and 8am-2pm Sunday May 17th [times are approximate Eastern Time].</p>
         </div>

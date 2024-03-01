@@ -89,7 +89,7 @@ function MultiselectDropdown(options){
   var config={
     search:true,
     height:'15rem',
-    placeholder:'select',
+    placeholder:'Select all that apply',
     txtSelected:'selected',
     txtAll:'All',
     txtRemove: 'Remove',
@@ -129,7 +129,7 @@ function MultiselectDropdown(options){
       
       if(el.attributes['multiselect-select-all']?.value=='true'){
         var op=newEl('div',{class:'multiselect-dropdown-all-selector'})
-        var ic=newEl('input',{type:'checkbox'});
+        var ic=newEl('input',{type:'checkbox',name:'name'});
         op.appendChild(ic);
         op.appendChild(newEl('label',{text:config.txtAll}));
   
@@ -221,12 +221,25 @@ function MultiselectDropdown(options){
 
 window.addEventListener('load',()=>{
   MultiselectDropdown(window.MultiselectDropdownOptions);
-  $('.multiselect-dropdown').attr("tabindex","0");
-  $(".multiselect-dropdown").keydown(function(e){
-    if(e.which === 13 || e.which === 32){
-      $(this).click();
-    }
-  });
+  
+  if ($('.multiselect-dropdown').length > 0){
+
+    // Accessibility tab function
+    $('.multiselect-dropdown').attr("tabindex","0");
+    $('.multiselect-dropdown').keydown(function(e){
+      if(e.which === 13 || e.which === 32){
+        $(this).click();
+      }
+    });
+
+    // Parsley validation on multi select dropdowns
+    $('input', $('.multiselect-dropdown-list')).each(function () {
+      var nameAttr = $(this).parent().parent().parent().parent().prev().attr("name");
+      $(this).attr("name", nameAttr);
+    });
+
+  }
+  
 });
 
 

@@ -175,11 +175,6 @@ function displayResults() {
 document.getElementById("nextBtn").addEventListener("click", displayResults);
 
 
-if ($('span.placeholder').length > 0) {  
-  $("span.placeholder").html("Select all that apply");
-}
-
-
 let nextButton = document.getElementById("nextBtn");
 nextButton.addEventListener('click', function () {
   if ($('.parsley-error').length < 1) {
