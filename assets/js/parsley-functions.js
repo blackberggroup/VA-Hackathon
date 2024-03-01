@@ -72,7 +72,6 @@ function displayResults() {
     var jobTitle = $("#job_title").val();
     var primBkgd = $("#primary_background").val();
     var addlBkgd = $("#additional_background").val();
-    var resume = $("#resume").val();
     var linkedin = $("#linkedin").val();
     $("td#results_fname").html(firstName);
     $("td#results_lname").html(lastName);
@@ -91,7 +90,6 @@ function displayResults() {
     $("td#results_job_title").html(jobTitle);
     $("td#results_prim_bkgd").html(primBkgd);
     $("td#results_addl_bkgd").html(addlBkgd);
-    $("td#results_resume").html(resume);
     $("td#results_linkedin").html(linkedin);
 
     // Logistics
@@ -99,13 +97,11 @@ function displayResults() {
     var hotelOptions = $("input[type='radio'][name=hotel-options]:checked").val();
     var accessOptions = $("input[type='radio'][name=access-options]:checked").val();
     var access_needs = $("#access_needs").val();
-    var tshirtSize = $("#tshirt").val();
     var diet = $("#diet").val();
     $("td#results_travel-options").html(travelOptions);
     $("td#results_hotel-options").html(hotelOptions);
     $("td#results_access-options").html(accessOptions);
     $("td#results_access_needs").html(access_needs);
-    $("td#results_tshirt").html(tshirtSize);
     $("td#results_diet").html(diet);
 
     // Emergency Contact
@@ -182,19 +178,9 @@ function displayResults() {
   }
 } 
 
-document.getElementById("nextBtn").addEventListener("click", displayResults);
+document.getElementById("nextBtn1").addEventListener("click", displayResults);
+document.getElementById("nextBtn2").addEventListener("click", displayResults);
+document.getElementById("nextBtn3").addEventListener("click", displayResults);
+document.getElementById("nextBtn4").addEventListener("click", displayResults);
 
 
-let nextButton = document.getElementById("nextBtn");
-nextButton.addEventListener('click', function () {
-  if ($('.parsley-error').length < 1) {
-    document.getElementById('progress-tracker').scrollIntoView();
-  }
-});
-
-let backButton = document.getElementById("backBtn");
-backButton.addEventListener('click', function () {
-  if ($('.parsley-error').length < 1) {
-    document.getElementById('progress-tracker').scrollIntoView();
-  }
-});

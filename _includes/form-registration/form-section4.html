@@ -1,6 +1,6 @@
 <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker">
+    <div id="progress-tracker4" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -155,4 +155,30 @@
         </div>
 
     </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn4">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn4">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let nextButton4 = document.getElementById("nextBtn4");
+        nextButton4.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker4').scrollIntoView();
+                console.log("Clicked to scroll to progress tracker...page4");
+            }
+        });
+
+        let backButton4 = document.getElementById("backBtn4");
+        backButton4.addEventListener('click', function () {
+            document.getElementById('progress-tracker4').scrollIntoView();
+            console.log("Clicked to scroll to progress tracker...page4");
+        });
+    </script>
+
 </div>

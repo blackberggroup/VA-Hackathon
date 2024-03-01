@@ -1,6 +1,6 @@
 <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker">
+    <div id="progress-tracker3" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -230,5 +230,30 @@
             <p class="sub-label">In 200 - 500 characters, please share a little bit more about your background so we can ensure a diversity of skills at the event.</p>
         </div>
     </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn3">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn3">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let nextButton3 = document.getElementById("nextBtn3");
+        nextButton3.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker3').scrollIntoView();
+                console.log("Clicked to scroll to progress tracker...page3");
+            }
+        });
+
+        let backButton3 = document.getElementById("backBtn3");
+        backButton3.addEventListener('click', function () {
+            document.getElementById('progress-tracker3').scrollIntoView();
+            console.log("Clicked back btn on page 3");
+        });
+    </script>
 
 </div>

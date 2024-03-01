@@ -328,7 +328,7 @@
  
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker">
+    <div id="progress-tracker1" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -551,23 +551,36 @@
     </div>
 
     <div class="grid-row padding-top-8">
-        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
-            <label class="usa-label" for="resume">Link to Resume</label>
-            <input class="usa-input form-control" type="text" name="resume" id="resume" data-parsley-type="url" data-parsley-group="block-0">
-            <p class="sub-label">Please provide a link (Google Drive, Dropbox, etc.) to a PDF of your resume. Please note that resume information may be shared with VHA Tamp Hackathon sponsors.</p>
-        </div>
-
         <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="linkedin">LinkedIn Profile URL</label>
             <input class="usa-input form-control" type="text" name="linkedin" id="linkedin" data-parsley-type="url" data-parsley-group="block-0">
         </div>
     </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn1">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+
+    <script>
+        let nextButton1 = document.getElementById("nextBtn1");
+        nextButton1.addEventListener('click', function () {
+        if ($('.parsley-error').length < 1) {
+            document.getElementById('progress-tracker1').scrollIntoView();
+            console.log("Clicked to scroll to progress tracker from page1");
+        }
+        });
+    </script>
     
 </div> 
 
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker">
+    <div id="progress-tracker2" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -742,23 +755,7 @@
     </div>
 
     <div class="grid-row tablet-lg:padding-top-4">
-        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
-            <label class="usa-label" for="tshirt">T-shirt size <span>*</span></label>
-            <select class="usa-select" name="tshirt" id="tshirt" data-parsley-required data-parsley-group="block-1">
-                <option value="XXS">XXS</option>
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="2XL">2XL</option>
-                <option value="3XL">3XL</option>
-                <option value="4XL">4XL</option>
-            </select>
-            <p class="sub-label">All in Men's sizes.</p>
-        </div>
-
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
             <label class="usa-label" for="diet">Please list your dietary preferences <span>*</span></label>
             <select class="usa-select" name="diet" id="diet" data-parsley-required data-parsley-group="block-1">
                 <option value="Vegetarian">Vegetarian</option>
@@ -801,11 +798,36 @@
         </div>
     </div>
 
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn2">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn2">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+
+    <script>
+        let nextButton2 = document.getElementById("nextBtn2");
+            nextButton2.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker2').scrollIntoView();
+                console.log("Clicked to scroll to progress tracker from page2");
+            }
+            });
+
+            let backButton2 = document.getElementById("backBtn2");
+            backButton2.addEventListener('click', function () {
+                document.getElementById('progress-tracker2').scrollIntoView();
+                console.log("Clicked back btn on page 2");
+            });
+    </script>
+
 </div>
 
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker">
+    <div id="progress-tracker3" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -1036,11 +1058,36 @@
         </div>
     </div>
 
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn3">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn3">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let nextButton3 = document.getElementById("nextBtn3");
+        nextButton3.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker3').scrollIntoView();
+                console.log("Clicked to scroll to progress tracker...page3");
+            }
+        });
+
+        let backButton3 = document.getElementById("backBtn3");
+        backButton3.addEventListener('click', function () {
+            document.getElementById('progress-tracker3').scrollIntoView();
+            console.log("Clicked back btn on page 3");
+        });
+    </script>
+
 </div>
 
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker">
+    <div id="progress-tracker4" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -1195,11 +1242,37 @@
         </div>
 
     </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn4">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn4">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let nextButton4 = document.getElementById("nextBtn4");
+        nextButton4.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker4').scrollIntoView();
+                console.log("Clicked to scroll to progress tracker...page4");
+            }
+        });
+
+        let backButton4 = document.getElementById("backBtn4");
+        backButton4.addEventListener('click', function () {
+            document.getElementById('progress-tracker4').scrollIntoView();
+            console.log("Clicked to scroll to progress tracker...page4");
+        });
+    </script>
+
 </div>
 
                         <div class="form-section confirmation-page">
 
-    <div id="results_progress-tracker" class="progress-tracker">
+    <div id="progress-tracker5" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -1319,10 +1392,6 @@
                         <td id="results_addl_bkgd"></td>
                     </tr>
                     <tr>
-                        <th scope="row">Link to Resume</th>
-                        <td id="results_resume"></td>
-                    </tr>
-                    <tr>
                         <th scope="row">LinkedIn Profile URL</th>
                         <td id="results_linkedin"></td>
                     </tr>
@@ -1348,10 +1417,6 @@
                     <tr>
                         <th scope="row">If you selected yes in the previous question, please explain.</th>
                         <td id="results_access_needs"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">T-shirt size</th>
-                        <td id="results_tshirt"></td>
                     </tr>
                     <tr>
                         <th scope="row">Please list your dietary preferences.</th>
@@ -1457,18 +1522,35 @@
         </div>
     </div>
 
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn5">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn5">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let backButton5 = document.getElementById("backBtn5");
+        backButton5.addEventListener('click', function () {
+            document.getElementById('progress-tracker5').scrollIntoView();
+            console.log("Clicked to scroll to progress tracker...page5");
+        });
+    </script>
+
 </div>
 
 
 
-                        <hr class="margin-top-10" role="none" />
+                        <!-- <hr class="margin-top-10" role="none" /> -->
 
-                        <div class="form-navigation text-right margin-y-5">
+                        <!-- <div class="form-navigation text-right margin-y-5">
                             <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn">Back</button>
                             <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn">Continue</button>
                             <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
                             <span class="clearfix"></span>
-                        </div>
+                        </div> -->
 
                     </form>
 
