@@ -255,7 +255,8 @@
     <div class="form-navigation text-right margin-y-5">
         <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn5">Back</button>
         <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn5">Continue</button>
-        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application" href="thank-you/index.html">
+
         <span class="clearfix"></span>
     </div>
     
@@ -263,7 +264,6 @@
         let backButton5 = document.getElementById("backBtn5");
         backButton5.addEventListener('click', function () {
             document.getElementById('progress-tracker5').scrollIntoView();
-            console.log("Clicked to scroll to progress tracker...page5");
         });
     </script>
 

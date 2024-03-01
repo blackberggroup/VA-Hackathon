@@ -571,7 +571,6 @@
         nextButton1.addEventListener('click', function () {
             if ($('.parsley-error').length < 1) {
                 document.getElementById('progress-tracker1').scrollIntoView();
-                console.log("Clicked to scroll to progress tracker from page1");
             }
         });
     </script>
@@ -812,14 +811,12 @@
         nextButton2.addEventListener('click', function () {
         if ($('.parsley-error').length < 1) {
             document.getElementById('progress-tracker2').scrollIntoView();
-            console.log("Clicked to scroll to progress tracker from page2");
         }
         });
 
         let backButton2 = document.getElementById("backBtn2");
         backButton2.addEventListener('click', function () {
             document.getElementById('progress-tracker2').scrollIntoView();
-            console.log("Clicked back btn on page 2");
         });
     </script>
 
@@ -1072,14 +1069,12 @@
         nextButton3.addEventListener('click', function () {
             if ($('.parsley-error').length < 1) {
                 document.getElementById('progress-tracker3').scrollIntoView();
-                console.log("Clicked to scroll to progress tracker...page3");
             }
         });
 
         let backButton3 = document.getElementById("backBtn3");
         backButton3.addEventListener('click', function () {
             document.getElementById('progress-tracker3').scrollIntoView();
-            console.log("Clicked back btn on page 3");
         });
     </script>
 
@@ -1257,14 +1252,12 @@
         nextButton4.addEventListener('click', function () {
             if ($('.parsley-error').length < 1) {
                 document.getElementById('progress-tracker4').scrollIntoView();
-                console.log("Clicked to scroll to progress tracker...page4");
             }
         });
 
         let backButton4 = document.getElementById("backBtn4");
         backButton4.addEventListener('click', function () {
             document.getElementById('progress-tracker4').scrollIntoView();
-            console.log("Clicked to scroll to progress tracker...page4");
         });
     </script>
 
@@ -1527,7 +1520,8 @@
     <div class="form-navigation text-right margin-y-5">
         <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn5">Back</button>
         <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn5">Continue</button>
-        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application" href="thank-you/index.html">
+
         <span class="clearfix"></span>
     </div>
     
@@ -1535,7 +1529,6 @@
         let backButton5 = document.getElementById("backBtn5");
         backButton5.addEventListener('click', function () {
             document.getElementById('progress-tracker5').scrollIntoView();
-            console.log("Clicked to scroll to progress tracker...page5");
         });
     </script>
 

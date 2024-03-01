@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>VA Hackathon</title>
+
+  <meta property="og:title" content="((TITLE))">
+  <meta property="og:url" content="((URL))">
+  <meta property="og:description" content="((DESCRIPTION))">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="((OG:IMAGE URL))">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  
+  <link id="favicon" rel="shortcut icon" href="../assets/img/favicon.ico">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="../assets/uswds/js/uswds-init.min.js"></script>
+</head>
+
+<body>
+
+    <!-- SITE WRAPPER - START -->
+    <div class="site-wrapper">
+      {% include "header-sub.html" %}
+      
+        <main>
+
+            <section id="masthead-sub" class="masthead-sub">
+                <div class="grid-container">
+                    <div class="grid-row grid-gap">
+                        <div class="grid-col-12">
+                            <nav class="usa-breadcrumb position-absolute" aria-label="Breadcrumbs">
+                                <ol class="usa-breadcrumb__list">
+                                  <li class="usa-breadcrumb__list-item">
+                                    <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
+                                  </li>
+                                  <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+                                    <span>Thank You</span>
+                                  </li>
+                                </ol>
+                            </nav>
+                            <h1 class="text-center text-white padding-y-7 tablet-lg:padding-y-4">Thank you!</h1>
+                        </div>
+                    </div>
+                </div>       
+            </section>
+
+
+            <section id="form-ty" class="form-ty text-center">
+                <div class="grid-container">
+
+                    {% include "form-registration/form-sectionTY.html" %}
+
+                </div>
+            </section>
+
+        </main>
+
+        {% include "footer-sub.html" %}
+
+    </div>
+    <!-- SITE WRAPPER - END -->
+
+    <script src="../assets/uswds/js/uswds.min.js"></script>
+    <script src="../assets/js/vendors/multiselect/multiselect-dropdown.js"></script>
+    <script src="../assets/js/vendors/parsley/parsley.min.js"></script>
+    <script src="../assets/js/parsley-functions.js"></script>
+    <script src="../assets/js/functions.js"></script>
+
+</body>
+
+</html>
