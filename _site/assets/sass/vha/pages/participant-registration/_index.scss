@@ -268,4 +268,10 @@ section.form-fields {
         vertical-align: middle;
         display: inline-flex;
     }
+
+    .multiselect-dropdown-list input[type=checkbox] {
+        display: inline-flex;
+        vertical-align: top;
+    }
+    
 }

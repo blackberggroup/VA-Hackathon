@@ -54,7 +54,17 @@ function displayResults() {
     var country = $("#country").val();
     var state = $("#state").val();
     var city = $("#city").val();
-    var ethnicity = $("#ethnicity").val();
+  
+    var ethnicBkgdsResults;
+    var ethnicBkgds = $("#ethnicity").val();
+    if ($("#ethnicity").length > 0) {
+        if (ethnicBkgds.length > 1) {
+            ethnicBkgdsResults = ethnicBkgds.join(', ');
+        } else {
+            ethnicBkgdsResults = ethnicBkgds;
+        }
+    }
+
     var otherEthnicity = $("#other-ethnicity").val();
     var veteran = $("input[type='radio'][name=vet-options]:checked").val();
     var occupation = $("#occupation").val();
@@ -73,7 +83,7 @@ function displayResults() {
     $("td#results_country").html(country);
     $("td#results_state").html(state);
     $("td#results_city").html(city);
-    $("td#results_ethnicity").html(ethnicity);
+    $("td#results_ethnicity").html(ethnicBkgdsResults);
     $("td#results_other_ethnicity").html(otherEthnicity);
     $("td#results_veteran").html(veteran);
     $("td#results_occupation").html(occupation);
