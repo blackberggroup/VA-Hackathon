@@ -328,7 +328,7 @@
  
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-0">
+    <div id="progress-tracker" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -367,9 +367,9 @@
         </div>
     </div>
 
-    <div class="grid-row" data-parsley-group="block-0">
+    <div class="grid-row">
         <div class="grid-col-12 padding-top-4">
-            <h2 id="anchor">Personal Information</h2>
+            <h2>Personal Information</h2>
         </div>
     </div>
 
@@ -553,13 +553,13 @@
     <div class="grid-row padding-top-8">
         <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
             <label class="usa-label" for="resume">Link to Resume</label>
-            <input class="usa-input form-control" type="text" name="resume" id="resume" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="resume" id="resume" data-parsley-type="url" data-parsley-group="block-0">
             <p class="sub-label">Please provide a link (Google Drive, Dropbox, etc.) to a PDF of your resume. Please note that resume information may be shared with VHA Tamp Hackathon sponsors.</p>
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="linkedin">LinkedIn Profile URL</label>
-            <input class="usa-input form-control" type="text" name="linkedin" id="linkedin" data-parsley-group="block-0">
+            <input class="usa-input form-control" type="text" name="linkedin" id="linkedin" data-parsley-type="url" data-parsley-group="block-0">
         </div>
     </div>
     
@@ -567,7 +567,7 @@
 
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-1">
+    <div id="progress-tracker" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -606,9 +606,9 @@
         </div>
     </div>
 
-    <div class="grid-row" data-parsley-group="block-1">
+    <div class="grid-row">
         <div class="grid-col-12 padding-top-4">
-            <h2 id="anchor">Logistics</h2>
+            <h2>Logistics</h2>
         </div>
     </div>
 
@@ -805,7 +805,7 @@
 
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-2">
+    <div id="progress-tracker" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -844,9 +844,9 @@
         </div>
     </div>
 
-    <div class="grid-row" data-parsley-group="block-2">
+    <div class="grid-row">
         <div class="grid-col-12 padding-top-4">
-            <h2 id="anchor">Additional Information</h2>
+            <h2>Additional Information</h2>
         </div>
     </div>
 
@@ -1028,6 +1028,7 @@
                 maxlength="100"
                 rows="6"
                 aria-describedby="exp-skills-textarea-info exp-skills-textarea-hint"
+                data-parsley-required
                 data-parsley-group="block-2"
                 ></textarea>
             </div>
@@ -1039,7 +1040,7 @@
 
                         <div class="form-section">
 
-    <div id="progress-tracker" class="progress-tracker" data-parsley-group="block-3">
+    <div id="progress-tracker" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -1078,9 +1079,9 @@
         </div>
     </div>
 
-    <div class="grid-row" data-parsley-group="block-3">
+    <div class="grid-row">
         <div class="grid-col-12 padding-top-4">
-            <h2 id="anchor">Questions</h2>
+            <h2>Questions</h2>
         </div>
     </div>
 
@@ -1198,7 +1199,7 @@
 
                         <div class="form-section confirmation-page">
 
-    <div id="results_progress-tracker" class="progress-tracker" data-parsley-group="block-4">
+    <div id="results_progress-tracker" class="progress-tracker">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-justify-center">
                 <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
@@ -1237,9 +1238,9 @@
         </div>
     </div>
 
-    <div class="grid-row" data-parsley-group="block-4">
+    <div class="grid-row">
         <div class="grid-col-12 padding-top-4">
-            <h2 id="anchor">Registration Confirmation</h2>
+            <h2>Registration Confirmation</h2>
             <p>Please review your registration information prior to submitting the application. Click “back” to make any necessary changes.</p>
         </div>
     </div>
@@ -1663,6 +1664,15 @@
     <script src="../assets/js/vendors/parsley/parsley.min.js"></script>
     <script src="../assets/js/parsley-functions.js"></script>
     <script src="../assets/js/functions.js"></script>
+    <script>
+        document.getElementById("nextBtn").addEventListener('click', function () {
+            document.querySelector('.progress-tracker').scrollIntoView();
+        });
+        
+        document.getElementById("backBtn").addEventListener('click', function () {
+            document.querySelector('.progress-tracker').scrollIntoView();
+        });
+    </script>
 
 </body>
 

@@ -183,18 +183,3 @@ function displayResults() {
 } 
 
 document.getElementById("nextBtn").addEventListener("click", displayResults);
-
-
-let nextButton = document.getElementById("nextBtn");
-nextButton.addEventListener('click', function () {
-  if ($('.parsley-error').length < 1) {
-    document.getElementById('progress-tracker').scrollIntoView();
-  }
-});
-
-let backButton = document.getElementById("backBtn");
-backButton.addEventListener('click', function () {
-  if ($('.parsley-error').length < 1) {
-    document.getElementById('progress-tracker').scrollIntoView();
-  }
-});
