@@ -21,7 +21,8 @@ h4, .h4 {
     @include font-size(18px);
 }
 
-.heading-subtitle {
-    font-weight: bold;
-    color: var(--red-8);
+.hero {
+    &__main-heading {
+        @include font-size(72px);
+    }
 }
