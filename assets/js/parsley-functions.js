@@ -71,7 +71,17 @@ function displayResults() {
     var school_company = $("#school").val();
     var jobTitle = $("#job_title").val();
     var primBkgd = $("#primary_background").val();
+
+    var addlBkgdResults;
     var addlBkgd = $("#additional_background").val();
+    if ($("#additional_background").length > 0) {
+        if (addlBkgd.length > 1) {
+            addlBkgdResults = addlBkgd.join(', ');
+        } else {
+            addlBkgdResults = addlBkgd;
+        }
+    }
+
     var linkedin = $("#linkedin").val();
     $("td#results_fname").html(firstName);
     $("td#results_lname").html(lastName);
@@ -89,20 +99,30 @@ function displayResults() {
     $("td#results_school_company").html(school_company);
     $("td#results_job_title").html(jobTitle);
     $("td#results_prim_bkgd").html(primBkgd);
-    $("td#results_addl_bkgd").html(addlBkgd);
+    $("td#results_addl_bkgd").html(addlBkgdResults);
     $("td#results_linkedin").html(linkedin);
 
     // Logistics
     var travelOptions = $("input[type='radio'][name=travel-options]:checked").val();
     var hotelOptions = $("input[type='radio'][name=hotel-options]:checked").val();
     var accessOptions = $("input[type='radio'][name=access-options]:checked").val();
-    var access_needs = $("#access_needs").val();
+    var access_needs = $("#access-needs").val();
+
+    var dietResults;
     var diet = $("#diet").val();
+    if ($('#diet').length > 0) {
+        if (diet.length > 1) {
+            dietResults = diet.join(', ');
+        } else {
+            dietResults = diet;
+        }
+    }
+
     $("td#results_travel-options").html(travelOptions);
     $("td#results_hotel-options").html(hotelOptions);
     $("td#results_access-options").html(accessOptions);
-    $("td#results_access_needs").html(access_needs);
-    $("td#results_diet").html(diet);
+    $("td#results_access-needs").html(access_needs);
+    $("td#results_diet").html(dietResults);
 
     // Emergency Contact
     var emerName = $("#emer-name").val();
@@ -167,7 +187,7 @@ function displayResults() {
     var healthcare = $("#healthcare-textarea").val();
     var expGain = $("#exp-gain-textarea").val();
     var viewsGain = $("#views-textarea").val();
-    var hackOptions = $("input[type='radio'][name=hack-options]:checked").val();
+    var hackOptions = $("input[type='radio'][name=hacka-options]:checked").val();
     var checkAcknowledge = $("#check-acknowledge").val();
     
     $("td#results_healthcare-textarea").html(healthcare);
@@ -178,9 +198,6 @@ function displayResults() {
   }
 } 
 
-document.getElementById("nextBtn1").addEventListener("click", displayResults);
-document.getElementById("nextBtn2").addEventListener("click", displayResults);
-document.getElementById("nextBtn3").addEventListener("click", displayResults);
 document.getElementById("nextBtn4").addEventListener("click", displayResults);
 
 

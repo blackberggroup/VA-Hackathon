@@ -57,9 +57,10 @@
         </div>
 
         <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
-            <label class="usa-label" for="preferred-contact">What is your preferred mode of contact during the hackathon? <span>*</span></label>
+            <label class="usa-label" for="preferred-contact">Preferred mode of contact <span>*</span></label>
             <select class="usa-select" name="preferred-contact" id="preferred-contact" data-parsley-required data-parsley-group="block-2">
-                <option value="Phone / text" selected="selected">Phone / text</option>
+                <option value>Select</option>
+                <option value="Phone / text">Phone / text</option>
                 <option value="Email">Email</option>
             </select>
         </div>
@@ -67,7 +68,8 @@
         <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-x-1">
             <label class="usa-label" for="hear_about_us">How did you hear about this event? <span>*</span></label>
             <select class="usa-select" name="hear_about_us" id="hear_about_us" data-parsley-required data-parsley-group="block-2">
-                <option value="Friend" selected="selected">Friend</option>
+                <option value>Select</option>
+                <option value="Friend">Friend</option>
                 <option value="Email">Email</option>
                 <option value="Social_media">Social media</option>
                 <option value="Professor / School">Professor / School</option>
@@ -235,7 +237,7 @@
 
     <div class="form-navigation text-right margin-y-5">
         <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn3">Back</button>
-        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn3">Continue</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid nextBtn" id="nextBtn3">Continue</button>
         <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
         <span class="clearfix"></span>
     </div>

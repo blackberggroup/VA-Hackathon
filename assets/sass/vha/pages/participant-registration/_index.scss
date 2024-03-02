@@ -264,9 +264,13 @@ section.form-fields {
     }
 
     .usa-radio__label {
-        margin-top: -10px;
         vertical-align: middle;
         display: inline-flex;
+    }
+
+    .usa-radio__label::before {
+        background: #fff;
+        box-shadow: 0 0 0 2px #71767A;
     }
 
     .multiselect-dropdown-list input[type=checkbox] {

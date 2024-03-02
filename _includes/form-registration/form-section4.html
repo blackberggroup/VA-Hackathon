@@ -104,7 +104,7 @@
 
     <div class="grid-row padding-top-8">
         <div class="grid-col-12">
-            <fieldset class="usa-fieldset">
+            <!-- <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
                 <div class="usa-radio">
                     <input
@@ -132,6 +132,38 @@
                     <label class="usa-radio__label" for="hackathon-yes">Yes</label>
                 </div>
                 <div id="event-required-msg"></div>
+            </fieldset> -->
+
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hacka-no"
+                    type="radio"
+                    name="hacka-options"
+                    value="No"
+                    tabindex="0"
+                    data-parsley-group="block-0"
+                    data-parsley-errors-container="#hacka-required-msg"
+                  />
+                  <label class="usa-radio__label" for="hacka-no">No</label>
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hacka-yes"
+                    type="radio"
+                    name="hacka-options"
+                    value="Yes"
+                    tabindex="0"
+                    data-parsley-required
+                    data-parsley-group="block-0"
+                    data-parsley-errors-container="#hacka-required-msg"
+                  />
+                  <label class="usa-radio__label" for="hacka-yes">Yes</label>
+                  <div id="hacka-required-msg"></div>
+                </div>
             </fieldset>
             <p class="sub-label">The event takes place from 4pm-10pm Friday May 17th, 8am-10pm Saturday May 16th, and 8am-2pm Sunday May 17th [times are approximate Eastern Time].</p>
         </div>
@@ -160,7 +192,7 @@
 
     <div class="form-navigation text-right margin-y-5">
         <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn4">Back</button>
-        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn4">Continue</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid nextBtn" id="nextBtn4">Continue</button>
         <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
         <span class="clearfix"></span>
     </div>
