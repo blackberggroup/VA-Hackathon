@@ -21,6 +21,10 @@ h4, .h4 {
     @include font-size(18px);
 }
 
+.lead {
+    @include font-size(22px);
+}
+
 .hero {
     &__main-heading {
         @include font-size(72px);
