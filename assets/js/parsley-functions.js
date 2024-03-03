@@ -198,6 +198,8 @@ function displayResults() {
   }
 } 
 
-document.getElementById("nextBtn4").addEventListener("click", displayResults);
+if ($('#nextBtn4').length > 0) {
+  document.getElementById("nextBtn4").addEventListener("click", displayResults);
+}
 
 
