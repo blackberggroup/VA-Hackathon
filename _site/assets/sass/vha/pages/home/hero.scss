@@ -1,5 +1,5 @@
 .hero {
-    background: url('/assets/img/home/hero-background.jpg') no-repeat center center #000000;
+    background: url('/assets/img/home/hero-background.jpg') no-repeat center bottom #000000;
     color: #ffffff;
     position: relative;
     padding-bottom: 14%;
@@ -9,9 +9,6 @@
         z-index: 10;
     }
 
-    &__wrapper {
-    }
-
     &__border {
         position: absolute;
         bottom: -1px;
@@ -19,8 +16,8 @@
         width: 100%;
         z-index: 1;
 
-        svg {
-            display: block;
+        &-wrapper {
+            position: relative;    
         }
 
     }

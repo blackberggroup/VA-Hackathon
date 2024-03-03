@@ -22,7 +22,7 @@
   <script src="assets/uswds/js/uswds-init.min.js"></script>
 </head>
 
-<body>
+<body class="home-page">
 
     <!-- SITE WRAPPER - START -->
     <div class="site-wrapper">
@@ -31,6 +31,8 @@
         <main>
           {% include "home/hero.html" %}
           {% include "home/introduction.html" %}
+          {% include "home/interested-participants.html" %}
+          {% include "home/innovation-impact.html" %}
         </main>
 
         {% include "footer.html" %}
@@ -40,6 +42,9 @@
 
     <script src="assets/uswds/js/uswds.min.js"></script>
     <script src="assets/js/vendors/lazy/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" type="text/javascript"></script>
+    <script src="assets/js/vendors/wavify/wavify.js" type="text/javascript"></script>
+    <script src="assets/js/vendors/wavify/jquery.wavify.js" type="text/javascript"></script>
     <script src="assets/js/functions.js"></script>
 
 </body>
