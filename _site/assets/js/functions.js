@@ -62,6 +62,26 @@ if ($('.lazy').length > 0){
 	});
 }
 
+if ($('#wave-hero-1').length > 0){
+	$(function() {
+		var waveHero = $('#wave-hero-1').wavify({
+			height: 50,
+			bones: 5,
+			amplitude: 50,
+			color: '#ffffff',
+			speed: .20
+		  });		  
+
+		var waveHero2 = $('#wave-hero-2').wavify({
+			height: 50,
+			bones: 2,
+			amplitude: 50,
+			color: 'rgba(255,255,255,.25)',
+			speed: .20
+		});		  
+
+	});
+}
 
 if ($('.vha-video__play-action').length > 0){
 	$('.vha-video__play-action').magnificPopup({
