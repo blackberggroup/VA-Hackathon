@@ -1,0 +1,269 @@
+<div class="form-section confirmation-page">
+
+    <div id="progress-tracker5" class="progress-tracker">
+        <div class="grid-container">
+            <div class="grid-row grid-gap flex-justify-center">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
+                    <div class="usa-step-indicator usa-step-indicator--counters"
+                    aria-label="progress">
+                        <ol class="usa-step-indicator__segments">
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Personal Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Logistics
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Additional Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Questions
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
+                                <span class="usa-step-indicator__segment-label">
+                                Confirmation
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 padding-top-4">
+            <h2>Registration Confirmation</h2>
+            <p>Please review your registration information prior to submitting the application. Click “back” to make any necessary changes.</p>
+        </div>
+    </div>
+
+    <div class="grid-row" data-parsley-group="block-4">
+        <div class="grid-col-12 table-wrapper">
+            <table class="usa-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Personal Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">First name</th>
+                        <td id="results_fname"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Last name</th>
+                        <td id="results_lname"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td id="results_email"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone</th>
+                        <td id="results_phone"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Preferred Pronoun</th>
+                        <td id="results_pronoun"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Country of Residence</th>
+                        <td id="results_country"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">State</th>
+                        <td id="results_state"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">City</th>
+                        <td id="results_city"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Which of the following best describes your ethnic background?</th>
+                        <td id="results_ethnicity"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If you selected "other" to the previous question, please elaborate if you feel comfortable doing so.</th>
+                        <td id="results_other_ethnicity"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Are you active duty or a Veteran of the United States Military?</th>
+                        <td id="results_veteran"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What is your occupation?</th>
+                        <td id="results_occupation"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">School / Company Name</th>
+                        <td id="results_school_company"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Job Title</th>
+                        <td id="results_job_title"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What is your primary background?</th>
+                        <td id="results_prim_bkgd"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Additional background areas</th>
+                        <td id="results_addl_bkgd"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">LinkedIn Profile URL</th>
+                        <td id="results_linkedin"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Logistics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Will you be traveling from outside the United States to attend this event?</th>
+                        <td id="results_travel-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Will you require a room in our hotel block (we will hold a block of rooms in a local hotel and you can pay to stay as you wish).</th>
+                        <td id="results_hotel-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Do you have any accessibility needs that require accommodation for the Hackathon?</th>
+                        <td id="results_access-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If you selected yes in the previous question, please explain.</th>
+                        <td id="results_access-needs"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please list your dietary preferences.</th>
+                        <td id="results_diet"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Emergency Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td id="results_emer-name"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td id="results_emer-email"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone</th>
+                        <td id="results_emer-phone"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Additional Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Select affiliation you have with VHA</th>
+                        <td id="results_affiliation"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What is your preferred mode of contact during the hackathon?</th>
+                        <td id="results_preferred-contact"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">How did you hear about this event?</th>
+                        <td id="results_hear_about_us"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">In the future, would you like to be contacted by our sponsors for
+                            opportunities that may be of interest to you?</th>
+                        <td id="results_sponsor-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Have you been to healthcare hackathon before?</th>
+                        <td id="results_hackathon-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If yes, please list the names and years of the hackathons you've attended</th>
+                        <td id="results_hack-exp-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please check off any technical skills you are proficient in.</th>
+                        <td id="results_tech_skills"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please check off any team-based skills you have.</th>
+                        <td id="results_team_skills"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please check off any clinical skills you have.</th>
+                        <td id="results_clinical_skills"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please briefly describe your experience and skills.</th>
+                        <td id="results_exp-skills-textarea"></td>
+                    </tr>
+                    
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Questions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Tell us about a healthcare problem that you care about.</th>
+                        <td id="results_healthcare-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">What are three things you are hoping to gain from this experience?</th>
+                        <td id="results_exp-gain-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity?</th>
+                        <td id="results_views-textarea"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Can you make the entire event?</th>
+                        <td id="results_hack-options"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Photography acknowledgement</th>
+                        <td id="results_check-acknowledge"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn5">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid" id="nextBtn5">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let backButton5 = document.getElementById("backBtn5");
+        backButton5.addEventListener('click', function () {
+            document.getElementById('progress-tracker5').scrollIntoView();
+        });
+    </script>
+</div>
+

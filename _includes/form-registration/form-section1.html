@@ -1,0 +1,252 @@
+<div class="form-section">
+
+    <div id="progress-tracker1" class="progress-tracker">
+        <div class="grid-container">
+            <div class="grid-row grid-gap flex-justify-center">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
+                    <div class="usa-step-indicator usa-step-indicator--counters"
+                    aria-label="progress">
+                        <ol class="usa-step-indicator__segments">
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
+                                <span class="usa-step-indicator__segment-label">
+                                    Personal Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                    Logistics
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                    Additional Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                    Questions
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                Confirmation
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 padding-top-4">
+            <h2>Personal Information</h2>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-2">
+            <label class="usa-label" for="firstname">First name <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="firstname" id="firstname" data-parsley-required data-parsley-group="block-0">
+        </div>
+    
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
+            <label class="usa-label" for="lastname">Last name <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="lastname" id="lastname" data-parsley-required data-parsley-group="block-0">
+        </div>
+
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet:padding-right-2 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-0 tablet-lg:padding-left-2">
+            <label class="usa-label" for="email">Email <span>*</span></label>
+            <input class="usa-input form-control" type="email" name="email" id="email" data-parsley-required data-parsley-group="block-0">
+        </div>
+
+        <div class="grid-col-12 padding-top-2 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-left-0 tablet-lg:padding-right-2">
+            <label class="usa-label" for="phone">Phone <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="phone" id="phone" data-parsley-required data-parsley-type="digits" data-parsley-group="block-0">
+        </div>
+    
+        <div class="grid-col-12 padding-top-2 tablet:padding-right-2 tablet-lg:padding-left-1 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+            <label class="usa-label" for="age">Age <span>*</span></label>
+            <select class="usa-select" name="age" id="age" data-parsley-required data-parsley-group="block-0">
+                <option value>Select</option>
+                <option value="18_24">18-24</option>
+                <option value="25_34">25-34</option>
+                <option value="35_44">35-44</option>
+                <option value="45_54">45-54</option>
+                <option value="55">55+</option>
+                <option value="nopref">Prefer not to say</option>
+            </select>
+        </div>
+
+        <div class="grid-col-12 padding-top-2 tablet:padding-left-1 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-right-0 tablet-lg:padding-left-2">
+            <label class="usa-label" for="pronoun">Preferred Pronoun <span>*</span></label>
+            <select class="usa-select" name="pronoun" id="pronoun" data-parsley-required data-parsley-group="block-0">
+                <option value>Select</option>
+                <option value="He">He</option>
+                <option value="She">She</option>
+                <option value="They">They</option>
+                <option value="Ze">Ze</option>
+                <option value="A pronoun not listed">A pronoun not listed</option>
+                <option value="No pronoun preference/prefer not to say">No pronoun preference/prefer not to say</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="grid-row tablet-lg:padding-top-2">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-2 tablet-lg:padding-right-2">
+            <label class="usa-label" for="country">Country of Residence <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="country" id="country" data-parsley-required data-parsley-group="block-0">
+        </div>
+    
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
+            <label class="usa-label" for="state">State</label>
+            <input class="usa-input form-control" type="text" name="state" id="state" data-parsley-group="block-0">
+        </div>
+
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-2 tablet-lg:padding-right-0 tablet-lg:padding-left-2">
+            <label class="usa-label" for="city">City</label>
+            <input class="usa-input form-control" type="text" name="city" id="city" data-parsley-group="block-0">
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+            <label class="usa-label" for="ethnicity">Which of the following best describes your ethnic background? <span>*</span></label>
+            <select class="usa-select" name="ethnicity" id="ethnicity" data-parsley-required data-parsley-group="block-0" multiple>
+                <option value="American Indian or Alaska Native">American Indian or Alaska Native
+                </option>
+                <option value="Asian">Asian</option>
+                <option value="Black or African American">Black or African American</option>
+                <option value="Caucasian or White">Caucasian or White</option>
+                <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                <option value="Other">Other</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+            <p class="sub-label">Select all that apply.</p>
+        </div>
+    
+        <div class="grid-col-12 tablet-lg:grid-col-8 tablet-lg:padding-left-1">
+            <label class="usa-label" for="other-ethnicity">If you selected "other" to the previous question, please elaborate if you feel comfortable doing so</label>
+            <input class="usa-input form-control" type="text" name="other-ethnicity" id="other-ethnicity" data-parsley-group="block-0">
+        </div>
+    </div>
+
+    <div class="grid-row grid-gap-lg padding-top-8">
+        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Are you active duty or a Veteran of the United States Military? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="vet-no"
+                    type="radio"
+                    name="vet-options"
+                    value="No"
+                    tabindex="0"
+                    data-parsley-group="block-0"
+                    data-parsley-errors-container="#vet-required-msg"
+                  />
+                  <label class="usa-radio__label" for="vet-no">No</label>
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="vet-yes"
+                    type="radio"
+                    name="vet-options"
+                    value="Yes"
+                    tabindex="0"
+                    data-parsley-required
+                    data-parsley-group="block-0"
+                    data-parsley-errors-container="#vet-required-msg"
+                  />
+                  <label class="usa-radio__label" for="vet-yes">Yes</label>
+                  <div id="vet-required-msg"></div>
+                </div>
+            </fieldset>
+        </div>
+    
+        <div class="grid-col-12 padding-top-3 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+            <label class="usa-label" for="occupation">What is your occupation? <span>*</span></label>
+            <select class="usa-select" name="occupation" id="occupation" data-parsley-required data-parsley-group="block-0">
+                <option value>Select</option>
+                <option value="Student">Student</option>
+                <option value="Professional">Professional / Non-student</option>
+            </select>
+        </div>
+
+        <div class="grid-col-12 padding-top-3 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-2 tablet-lg:padding-left-2 tablet-lg:padding-right-0">
+            <label class="usa-label" for="school">School / Company <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="school" id="school" data-parsley-required data-parsley-group="block-0">
+            <p class="sub-label">Write “N/A” if not applicable.</p>
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+            <label class="usa-label" for="job_title">Job Title <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="job_title" id="job_title" data-parsley-required data-parsley-group="block-0">
+            <p class="sub-label">If you are a student, please put the degree being sought and the focus of your program (e.g. "MBA with a concentration in Innovation & Entrepreneurship").</p>
+        </div>
+
+        <div class="grid-col-12 padding-top-3 tablet:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+            <label class="usa-label" for="primary_background">What is your primary background? <span>*</span></label>
+            <select class="usa-select" name="primary_background" id="primary_background" data-parsley-required data-parsley-group="block-0">
+                <option value>Select</option>
+                <option value="Business / Finance">Business / Finance</option>
+                <option value="Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)">Healthcare Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
+                <option value="Designer (Product, Graphic, Print, etc.)">Designer (Product, Graphic, Print, etc.)</option>
+                <option value="Software Professional (Developer, IT Professional, etc.)">Software Professional (Developer, IT Professional, etc.)</option>
+                <option value="Engineer (Electrical, Mechanical, Biological, Chemical, etc.)">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="Engineer (Electrical, Mechanical, Biological, Chemical, etc.)">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="Data Engineer / Data Scientist">Data Engineer / Data Scientist</option>
+                <option value="Writer / Journalist / Photographer / Media Specialist">Writer / Journalist / Photographer / Media Specialist</option>
+                <option value="Patient / Patient's Family">Patient / Patient's Family</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-left-2">
+            <label class="usa-label" for="additional_background">Additional background areas <span>*</span></label>
+            <select class="usa-select" name="additional_background" id="additional_background" data-parsley-required data-parsley-group="block-0" multiple>
+                <option value="Business / Finance">Business / Finance</option>
+                <option value="Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)">Provider (Physician, Nurse Practitioner, Physical Therapist, EMT, etc.)</option>
+                <option value="Designer (Product, Graphic, Print, etc.)">Designer (Product, Graphic, Print, etc.)</option>
+                <option value="Software Professional (Developer, IT Professional, etc.)">Software Professional (Developer, IT Professional, etc.)</option>
+                <option value="Engineer (Electrical, Mechanical, Biological, Chemical, etc.)">Engineer (Electrical, Mechanical, Biological, Chemical, etc.)</option>
+                <option value="Data Engineer / Data Scientist">Data Engineer / Data Scientist</option>
+                <option value="Scientist (Life Sciences, Physics, etc. )">Scientist (Life Sciences, Physics, etc. )</option>
+                <option value="Writer / Journalist / Photographer / Media Specialist">Writer / Journalist / Photographer / Media Specialist</option>
+                <option value="Patient / Patient's Family">Patient / Patient's Family</option>
+            </select>
+            <p class="sub-label">Check all that apply.</p>
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+            <label class="usa-label" for="linkedin">LinkedIn Profile URL</label>
+            <input class="usa-input form-control" type="text" name="linkedin" id="linkedin" data-parsley-type="url" data-parsley-group="block-0">
+        </div>
+    </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid nextBtn" id="nextBtn1">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+
+    <script>
+        let nextButton1 = document.getElementById("nextBtn1");
+        nextButton1.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker1').scrollIntoView();
+            }
+        });
+    </script>
+    
+</div>

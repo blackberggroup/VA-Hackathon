@@ -1,0 +1,244 @@
+<div class="form-section">
+
+    <div id="progress-tracker2" class="progress-tracker">
+        <div class="grid-container">
+            <div class="grid-row grid-gap flex-justify-center">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
+                    <div class="usa-step-indicator usa-step-indicator--counters"
+                    aria-label="progress">
+                        <ol class="usa-step-indicator__segments">
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Personal Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
+                                <span class="usa-step-indicator__segment-label">
+                                    Logistics
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                    Additional Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                    Questions
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                Confirmation
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 padding-top-4">
+            <h2>Logistics</h2>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 tablet-lg:grid-col-6 tablet-lg:padding-right-2">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Will you be traveling from outside the United States to attend this event? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="travel-no"
+                    type="radio"
+                    name="travel-options"
+                    value="No"
+                    data-parsley-group="block-1"
+                    data-parsley-errors-container="#travel-required-msg"
+                  />
+                  <label class="usa-radio__label" for="travel-no">No</label>
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="travel-yes"
+                    type="radio"
+                    name="travel-options"
+                    value="Yes"
+                    data-parsley-group="block-1"
+                    data-parsley-errors-container="#travel-required-msg"
+                  />
+                  <label class="usa-radio__label" for="travel-yes">Yes</label>
+                </div>
+                <div class="usa-radio">
+                    <input
+                      class="usa-radio__input"
+                      id="travel-yes_visa"
+                      type="radio"
+                      name="travel-options"
+                      value="Yes, and I require a visa"
+                      data-parsley-required
+                      data-parsley-group="block-1"
+                      data-parsley-errors-container="#travel-required-msg"
+                    />
+                    <label class="usa-radio__label" for="travel-yes_visa">Yes, and I require a visa</label>
+                    <div id="travel-required-msg"></div>
+                </div>
+            </fieldset>
+        </div>
+    
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-6 tablet-lg:padding-left-2">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Will you require a room in our hotel block (we will hold a block of rooms in a local hotel and you can pay to stay as you wish)? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hotel-no"
+                    type="radio"
+                    name="hotel-options"
+                    value="No"
+                    data-parsley-group="block-1"
+                    data-parsley-errors-container="#hotel-required-msg"
+                  />
+                  <label class="usa-radio__label" for="hotel-no">No</label>
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hotel-yes"
+                    type="radio"
+                    name="hotel-options"
+                    value="Yes"
+                    data-parsley-group="block-1"
+                    data-parsley-errors-container="#hotel-required-msg"
+                  />
+                  <label class="usa-radio__label" for="hotel-yes">Yes</label>
+                </div>
+                <div class="usa-radio">
+                    <input
+                      class="usa-radio__input"
+                      id="hotel-not_sure"
+                      type="radio"
+                      name="hotel-options"
+                      value="Not sure"
+                      data-parsley-required
+                      data-parsley-group="block-1"
+                      data-parsley-errors-container="#hotel-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hotel-not_sure">Not sure</label>
+                </div>
+                <div id="hotel-required-msg"></div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="grid-row tablet-lg:padding-top-4">
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-6 tablet-lg:padding-right-2">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Do you have any accessibility needs that require accommodation for the Hackathon? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="access-no"
+                    type="radio"
+                    name="access-options"
+                    value="No"
+                    data-parsley-group="block-1"
+                    data-parsley-errors-container="#access-required-msg"
+                  />
+                  <label class="usa-radio__label" for="access-no">No</label>
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="access-yes"
+                    type="radio"
+                    name="access-options"
+                    value="Yes"
+                    data-parsley-required
+                    data-parsley-group="block-1"
+                    data-parsley-errors-container="#access-required-msg"
+                  />
+                  <label class="usa-radio__label" for="access-yes">Yes</label>
+                </div>
+                <div id="access-required-msg"></div>
+            </fieldset>
+        </div>
+
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-6 tablet-lg:padding-left-2">
+            <label class="usa-label" for="access-needs">If you selected yes in the previous question, please explain</label>
+            <input class="usa-input form-control" type="text" name="access-needs" id="access-needs" data-parsley-group="block-1">
+        </div>
+    </div>
+
+    <div class="grid-row tablet-lg:padding-top-4">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-right-2">
+            <label class="usa-label" for="diet">Please list your dietary preferences <span>*</span></label>
+            <select class="usa-select" name="diet" id="diet" data-parsley-required data-parsley-group="block-1" multiple>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Pescatarian">Pescatarian</option>
+                <option value="Omnivore">Omnivore</option>
+                <option value="Paleo">Paleo</option>
+                <option value="Gluten-free">Gluten-free</option>
+                <option value="Dairy-free">Dairy-free</option>
+                <option value="Nut-free">Nut-free</option>
+                <option value="Raw food diet">Raw food diet</option>
+                <option value="Dairy-free">Dairy-free</option>
+                <option value="Halal">Halal</option>
+                <option value="Ayurvedic">Ayurvedic</option>
+            </select>
+            <p class="sub-label">We will do our best to accommodate everyone attending the event.</p>
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-4" data-parsley-group="block-1">
+        <div class="grid-col-12">
+            <h2>Emergency Contact</h2>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-right-2">
+            <label class="usa-label" for="emer-name">Name <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="emer-name" id="emer-name" data-parsley-required data-parsley-group="block-1">
+        </div>
+
+        <div class="grid-col-12 padding-top-2 tablet:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-x-1">
+            <label class="usa-label" for="emer-email">Email <span>*</span></label>
+            <input class="usa-input form-control" type="email" name="emer-email" id="emer-email" data-parsley-required data-parsley-group="block-1">
+        </div>
+
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
+            <label class="usa-label" for="emer-phone">Phone <span>*</span></label>
+            <input class="usa-input form-control" type="text" name="emer-phone" id="emer-phone" data-parsley-required data-parsley-type="digits" data-parsley-group="block-1">
+        </div>
+    </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn2">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid nextBtn" id="nextBtn2">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+
+    <script>
+        let nextButton2 = document.getElementById("nextBtn2");
+        nextButton2.addEventListener('click', function () {
+        if ($('.parsley-error').length < 1) {
+            document.getElementById('progress-tracker2').scrollIntoView();
+        }
+        });
+
+        let backButton2 = document.getElementById("backBtn2");
+        backButton2.addEventListener('click', function () {
+            document.getElementById('progress-tracker2').scrollIntoView();
+        });
+    </script>
+
+</div>

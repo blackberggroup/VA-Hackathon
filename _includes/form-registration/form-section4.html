@@ -1,0 +1,214 @@
+<div class="form-section">
+
+    <div id="progress-tracker4" class="progress-tracker">
+        <div class="grid-container">
+            <div class="grid-row grid-gap flex-justify-center">
+                <div class="grid-col-10 tablet:grid-col-12 desktop-lg:grid-col-8 tablet:grid-offset-1">
+                    <div class="usa-step-indicator usa-step-indicator--counters"
+                    aria-label="progress">
+                        <ol class="usa-step-indicator__segments">
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Personal Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Logistics
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
+                                <span class="usa-step-indicator__segment-label">
+                                    Additional Info.
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
+                                <span class="usa-step-indicator__segment-label">
+                                    Questions
+                                </span>
+                            </li>
+                            <li class="usa-step-indicator__segment">
+                                <span class="usa-step-indicator__segment-label">
+                                Confirmation
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-12 padding-top-4">
+            <h2>Questions</h2>
+        </div>
+    </div>
+
+    <div class="grid-row tablet-lg:padding-top-2">
+        <div class="grid-col-12">
+            <div class="usa-form-group">
+                <label class="usa-label" for="healthcare-textarea">Tell us about a healthcare problem that you care about. <span>*</span></label>
+                <textarea
+                class="usa-textarea margin-top-2"
+                id="healthcare-textarea"
+                name="healthcare-textarea"
+                maxlength="300"
+                rows="6"
+                aria-describedby="healthcare-textarea-info healthcare-textarea-hint"
+                data-parsley-required 
+                data-parsley-group="block-3"
+                ></textarea>
+            </div>
+            <p class="sub-label">The issue can be as broad or narrow as you would like.</p>
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12">
+            <div class="usa-form-group">
+                <label class="usa-label" for="exp-gain-textarea">What are three things you are hoping to gain from this experience? <span>*</span></label>
+                <textarea
+                class="usa-textarea margin-top-2"
+                id="exp-gain-textarea"
+                name="exp-gain-textarea"
+                maxlength="300"
+                rows="6"
+                aria-describedby="exp-gain-textarea-info exp-gain-textarea-hint"
+                data-parsley-required 
+                data-parsley-group="block-3"
+                ></textarea>
+            </div>
+            <p class="sub-label">In 300 characters, please tell us more about why you are applying to Grand Hack so we can better tailor the hack towards your interests.</p>
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12">
+            <div class="usa-form-group">
+                <label class="usa-label" for="views-textarea">Please share a time when you worked with a colleague with a different background and perspective than your own. How did you make sure to be inclusive of their views and identity? <span>*</span></label>
+                <textarea
+                class="usa-textarea margin-top-2"
+                id="views-textarea"
+                name="views-textarea"
+                maxlength="300"
+                rows="6"
+                aria-describedby="views-textarea-info views-textarea-hint"
+                data-parsley-required 
+                data-parsley-group="block-3"
+                ></textarea>
+            </div>
+            <p class="sub-label">The VHA greatly values diversity and inclusion within our workspaces; numerous studies cite the importance of having a diverse and inclusive workspace to promote creativity, productivity, and knowledge sharing.</p>
+        </div>
+    </div>
+
+    <div class="grid-row padding-top-8">
+        <div class="grid-col-12">
+            <!-- <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
+                <div class="usa-radio">
+                    <input
+                        class="usa-radio__input"
+                        id="hackathon-no"
+                        type="radio"
+                        name="hack-options"
+                        value="No"
+                        data-parsley-group="block-3"
+                        data-parsley-errors-container="#event-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hackathon-no">No</label>
+                </div>
+                <div class="usa-radio">
+                    <input
+                        class="usa-radio__input"
+                        id="hackathon-yes"
+                        type="radio"
+                        name="hack-options"
+                        value="Yes"
+                        data-parsley-required 
+                        data-parsley-group="block-3"
+                        data-parsley-errors-container="#event-required-msg"
+                    />
+                    <label class="usa-radio__label" for="hackathon-yes">Yes</label>
+                </div>
+                <div id="event-required-msg"></div>
+            </fieldset> -->
+
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hacka-no"
+                    type="radio"
+                    name="hacka-options"
+                    value="No"
+                    tabindex="0"
+                    data-parsley-group="block-0"
+                    data-parsley-errors-container="#hacka-required-msg"
+                  />
+                  <label class="usa-radio__label" for="hacka-no">No</label>
+                </div>
+                <div class="usa-radio">
+                  <input
+                    class="usa-radio__input"
+                    id="hacka-yes"
+                    type="radio"
+                    name="hacka-options"
+                    value="Yes"
+                    tabindex="0"
+                    data-parsley-required
+                    data-parsley-group="block-0"
+                    data-parsley-errors-container="#hacka-required-msg"
+                  />
+                  <label class="usa-radio__label" for="hacka-yes">Yes</label>
+                  <div id="hacka-required-msg"></div>
+                </div>
+            </fieldset>
+            <p class="sub-label">The event takes place from 4pm-10pm Friday May 17th, 8am-10pm Saturday May 16th, and 8am-2pm Sunday May 17th [times are approximate Eastern Time].</p>
+        </div>
+
+        <div class="grid-col-12 padding-top-8">
+            <fieldset class="usa-fieldset">
+                <legend class="usa-legend">When you attend the VHA Tampa Hackathon 2024, you will enter an area where photography, audio and, video recording may be taken. Event organizers may use, reproduce, and/or publish photographs, videos, and other media taken during the Hackathon for promotional, educational, and/or informational purposes, including but not limited to website content, social media, press releases, and marketing materials. Event organizers retain the right to use the images and recordings for an unlimited period. By submitting this form, you consent to the use, reproduction, and/or publication of media captured during the event. Do you acknowledge this? <span>*</span</legend>
+                <div class="usa-checkbox margin-top-4">
+                  <input
+                    class="usa-checkbox__input"
+                    id="check-acknowledge"
+                    type="checkbox"
+                    name="check-acknowledge"
+                    value="Yes"
+                    data-parsley-required 
+                    data-parsley-group="block-3"
+                  />
+                  <label class="usa-checkbox__label" for="check-acknowledge">Yes</label>
+                </div>
+              </fieldset>
+        </div>
+
+    </div>
+
+    <hr class="margin-top-10" role="none" />
+
+    <div class="form-navigation text-right margin-y-5">
+        <button type="button" class="usa-button usa-button--outline previous btn margin-bottom-1 tablet-lg:margin-bottom-0" id="backBtn4">Back</button>
+        <button type="button" class="usa-button next btn tablet:margin-left-1 bg-primary-vivid nextBtn" id="nextBtn4">Continue</button>
+        <input class="usa-button btn tablet:margin-left-1 bg-primary-vivid" type="submit" value="Complete Application">
+        <span class="clearfix"></span>
+    </div>
+    
+    <script>
+        let nextButton4 = document.getElementById("nextBtn4");
+        nextButton4.addEventListener('click', function () {
+            if ($('.parsley-error').length < 1) {
+                document.getElementById('progress-tracker4').scrollIntoView();
+            }
+        });
+
+        let backButton4 = document.getElementById("backBtn4");
+        backButton4.addEventListener('click', function () {
+            document.getElementById('progress-tracker4').scrollIntoView();
+        });
+    </script>
+
+</div>
