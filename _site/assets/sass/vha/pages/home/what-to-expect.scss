@@ -1,0 +1,42 @@
+@use "uswds-core" as *;
+
+.card-gradient {
+
+
+    &__card {
+        height: 100%;
+    }
+
+    .usa-card {
+        margin: 0;
+    }
+
+    .usa-card__container {
+        color: #fff;
+        border: 0;
+    }
+
+    &--card-5 .usa-card__container {
+        background-color: #220E2B;
+    }
+
+    &--card-4 .usa-card__container {
+        background-color: #361745;
+    }
+    
+    &--card-3 .usa-card__container {
+        background-color: #4A1F5E;
+    }
+
+    &--card-2 .usa-card__container {
+        background-color: #5E2878;
+    }
+
+    &--card-1 .usa-card__container {
+        background-color: #723091;
+    }    
+    .card-gradient__card {
+        border: 0;
+    }
+    
+}
