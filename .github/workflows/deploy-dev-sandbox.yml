@@ -29,7 +29,6 @@ jobs:
           **/.DS_Store
           **/.git*
           **/.git*/**
-          **/_site/coming-soon/**
           **/node_modules/**
           **/assets/sass/**
           **/uswds/img/material-icons-deprecated/**
