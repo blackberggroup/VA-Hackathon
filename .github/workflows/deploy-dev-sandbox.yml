@@ -44,7 +44,7 @@ jobs:
     - name: 👀 Lighthouse
       uses: foo-software/lighthouse-check-action@master
       with:
-        urls: 'https://www.dev-innovation.bgsandbox.com/ecosystem/views/veteran-health-mit-hacking-medicine-2024/participant-registration/index.html'
+        urls: 'https://www.dev-innovation.bgsandbox.com/ecosystem/views/veteran-health-mit-hacking-medicine-2024/participant-application/index.html','https://www.dev-innovation.bgsandbox.com/ecosystem/views/veteran-health-mit-hacking-medicine-2024/thank-you/index.html','https://www.dev-innovation.bgsandbox.com/ecosystem/views/veteran-health-mit-hacking-medicine-2024/index.html'
         device: all  
         awsAccessKeyId: ${{ secrets.LIGHTHOUSE_CHECK_AWS_ACCESS_KEY_ID }}
         awsBucket: ${{ secrets.LIGHTHOUSE_CHECK_AWS_BUCKET }}
