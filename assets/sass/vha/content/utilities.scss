@@ -12,4 +12,22 @@
     content: "";
 }
 
-.position-relative { position: relative; }
+.flip-vertically {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -webkit-filter: FlipV;
+    filter: FlipV;
+    -ms-filter: "FlipV"
+}
+
+.position-center-vertically {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.position-center-horizontally {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

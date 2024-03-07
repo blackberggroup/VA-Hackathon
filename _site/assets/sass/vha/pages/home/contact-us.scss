@@ -1,0 +1,17 @@
+@use "uswds-core" as *;
+
+.hackathon-applicaiton {
+    position: relative;
+    z-index: 10;
+}
+
+.contact-us {
+    background: linear-gradient(0deg, #17152F 31%, #2B1538 77.39%);
+    position: relative;
+    z-index: 0;
+
+    @include at-media("widescreen") {
+        padding-top: 300px;
+        margin-top: -250px;
+    }
+}

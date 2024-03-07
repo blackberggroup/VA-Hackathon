@@ -78,7 +78,15 @@ if ($('#wave-hero-1').length > 0){
 			amplitude: 50,
 			color: 'rgba(255,255,255,.25)',
 			speed: .20
-		});		  
+		});
+		
+		var waveContact = $('#wave-contact').wavify({
+			height: 60,
+			bones: 4,
+			amplitude: 70,
+			color: '#ffffff',
+			speed: .30
+		});		
 
 	});
 }
@@ -94,5 +102,15 @@ if ($('.vha-video__play-action').length > 0){
 					'<div class="mfp-title">Some caption</div>'+
 					'</div>'
 		}
+	});
+}
+
+if ($('#countdown-timer').length > 0){
+	$('#countdown-timer').countdown('2024/05/17', function(event) {
+		var $this = $(this).html(event.strftime(''
+		+ '<div class="grid-col-fill"><span class="h1 text-bold">%D</span><br /><span class="text-bold">Days</span></div> '
+		+ '<div class="grid-col-fill"><span class="h1 text-bold">%H</span><br /><span class="text-bold">Hours</span></div> '
+		+ '<div class="grid-col-fill"><span class="h1 text-bold">%M</span><br /><span class="text-bold">Minutes</span></div> '
+		+ '<div class="grid-col-fill"><span class="h1 text-bold">%S</span><br /><span class="text-bold">Seconds</span></div> '));
 	});
 }
