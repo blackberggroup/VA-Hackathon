@@ -11,6 +11,9 @@
                                 <span class="usa-step-indicator__segment-label">
                                     Personal Info.
                                 </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Start
+                                </span>
                             </li>
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
                                 <span class="usa-step-indicator__segment-label">
@@ -30,6 +33,9 @@
                             <li class="usa-step-indicator__segment">
                                 <span class="usa-step-indicator__segment-label">
                                 Confirmation
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Finish
                                 </span>
                             </li>
                         </ol>
@@ -214,7 +220,7 @@
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="emer-phone">Phone <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="emer-phone" id="emer-phone" data-parsley-required data-parsley-type="digits" data-parsley-group="block-1">
+            <input class="usa-input form-control" data-parsley-type="number" name="emer-phone" id="emer-phone" data-parsley-required data-parsley-group="block-1">
         </div>
     </div>
 

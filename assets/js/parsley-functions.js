@@ -41,6 +41,24 @@ $(function () {
 });
 
 
+// Custom form field validator js
+$("input[type='radio'][name=access-options]").change(function() {     
+    if (this.value == 'Yes') {
+        $("input[type='text'][name=access-needs]").attr('data-parsley-required', true);
+    } else { 
+        $("input[type='text'][name=access-needs]").removeAttr('data-parsley-required', false);
+    }
+});
+
+$("input[type='radio'][name=hackathon-options]").change(function() {     
+  if (this.value == 'Yes') {
+      $("textarea[name=hack-exp-textarea]").attr('data-parsley-required', true);
+  } else { 
+      $("textarea[name=hack-exp-textarea]").removeAttr('data-parsley-required', false);
+  }
+});
+
+
 // Display user inputs in results table
 function displayResults() {
   if ($('.form-section.confirmation-page').length > 0) {
