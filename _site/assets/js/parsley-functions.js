@@ -41,6 +41,37 @@ $(function () {
 });
 
 
+// Custom form field validator js
+var requiredAccess = "<span class='dynamicAccess'> *</span>";
+var requiredHackExp = "<span class='dynamicHackExp'> *</span>";
+
+$("input[type='radio'][name=access-options]").change(function() {     
+  if (this.value == 'Yes') {
+      $("input[type='text'][name=access-needs]").attr('data-parsley-required', true);
+      $(requiredAccess).appendTo("label[for='access-needs']");
+  } else { 
+      $("input[type='text'][name=access-needs]").removeAttr('data-parsley-required', false);
+      $(".dynamicAccess").remove();
+      $(".access-needs-input").removeClass("parsley-error");
+      $(".access-needs-wrapper .parsley-errors-list").remove();
+      $("input[type='text'][name=access-needs]").val('');
+  }
+});
+
+$("input[type='radio'][name=hackathon-options]").change(function() {     
+  if (this.value == 'Yes') {
+      $("textarea[name=hack-exp-textarea]").attr('data-parsley-required', true);
+      $(requiredHackExp).appendTo("label[for='hack-exp-textarea']");
+  } else { 
+      $("textarea[name=hack-exp-textarea]").removeAttr('data-parsley-required', false);
+      $(".dynamicHackExp").remove();
+      $(".hack-exp-input").removeClass("parsley-error");
+      $(".hack-exp-wrapper .parsley-errors-list").remove();
+      $("textarea[name=hack-exp-textarea]").val('');
+  }
+});
+
+
 // Display user inputs in results table
 function displayResults() {
   if ($('.form-section.confirmation-page').length > 0) {

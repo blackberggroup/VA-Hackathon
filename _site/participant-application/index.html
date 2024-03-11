@@ -310,6 +310,9 @@
                                 Please fill out the application below. Applications for each individual must be submitted, as we do not accept team applications.
                                 <br>
                                 <br>
+                                Also, please don't use forward/back buttons on your browser, content will be lost.
+                                <br>
+                                <br>
                                 The deadline for applications is April 30th. Admissions will be sent out on a rolling basis, but we encourage you to get your application in as early as possible. Upon acceptance, we will send you an email.
                                 <br>
                                 <br>
@@ -323,7 +326,7 @@
             <section id="form-fields" class="form-fields">
                 <div class="grid-container">
 
-                    <form class="usa-form form-registration" action="/ecosystem/views/veteran-health-mit-hacking-medicine-2024/thank-you" data-parsley-validate>
+                    <form class="usa-form form-registration" action="../thank-you/" data-parsley-validate>
  
                         <div class="form-section">
 
@@ -337,6 +340,9 @@
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
                                 <span class="usa-step-indicator__segment-label">
                                     Personal Info.
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Start
                                 </span>
                             </li>
                             <li class="usa-step-indicator__segment">
@@ -357,6 +363,9 @@
                             <li class="usa-step-indicator__segment">
                                 <span class="usa-step-indicator__segment-label">
                                 Confirmation
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Finish
                                 </span>
                             </li>
                         </ol>
@@ -390,7 +399,7 @@
 
         <div class="grid-col-12 padding-top-2 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-left-1 tablet-lg:padding-left-0 tablet-lg:padding-right-2">
             <label class="usa-label" for="phone">Phone <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="phone" id="phone" data-parsley-required data-parsley-type="digits" data-parsley-group="block-0">
+            <input class="usa-input form-control" data-parsley-type="number" name="phone" id="phone" data-parsley-required data-parsley-group="block-0">
         </div>
     
         <div class="grid-col-12 padding-top-2 tablet:padding-right-2 tablet-lg:padding-left-1 tablet:grid-col-6 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
@@ -591,6 +600,9 @@
                                 <span class="usa-step-indicator__segment-label">
                                     Personal Info.
                                 </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Start
+                                </span>
                             </li>
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
                                 <span class="usa-step-indicator__segment-label">
@@ -610,6 +622,9 @@
                             <li class="usa-step-indicator__segment">
                                 <span class="usa-step-indicator__segment-label">
                                 Confirmation
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Finish
                                 </span>
                             </li>
                         </ol>
@@ -748,9 +763,9 @@
             </fieldset>
         </div>
 
-        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-6 tablet-lg:padding-left-2">
+        <div class="grid-col-12 padding-top-4 tablet-lg:padding-top-0 tablet-lg:grid-col-6 tablet-lg:padding-left-2 access-needs-wrapper">
             <label class="usa-label" for="access-needs">If you selected yes in the previous question, please explain</label>
-            <input class="usa-input form-control" type="text" name="access-needs" id="access-needs" data-parsley-group="block-1">
+            <input class="usa-input form-control access-needs-input" type="text" name="access-needs" id="access-needs" data-parsley-group="block-1">
         </div>
     </div>
 
@@ -794,7 +809,7 @@
 
         <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet:grid-col-6 tablet-lg:grid-col-4 tablet:padding-right-1 tablet-lg:padding-left-2">
             <label class="usa-label" for="emer-phone">Phone <span>*</span></label>
-            <input class="usa-input form-control" type="text" name="emer-phone" id="emer-phone" data-parsley-required data-parsley-type="digits" data-parsley-group="block-1">
+            <input class="usa-input form-control" data-parsley-type="number" name="emer-phone" id="emer-phone" data-parsley-required data-parsley-group="block-1">
         </div>
     </div>
 
@@ -836,6 +851,9 @@
                                 <span class="usa-step-indicator__segment-label">
                                     Personal Info.
                                 </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Start
+                                </span>
                             </li>
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
                                 <span class="usa-step-indicator__segment-label">
@@ -855,6 +873,9 @@
                             <li class="usa-step-indicator__segment">
                                 <span class="usa-step-indicator__segment-label">
                                 Confirmation
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Finish
                                 </span>
                             </li>
                         </ol>
@@ -971,11 +992,11 @@
             </fieldset>
         </div>
 
-        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1">
+        <div class="grid-col-12 padding-top-2 tablet-lg:padding-top-0 tablet-lg:grid-col-4 tablet-lg:padding-x-1 hack-exp-wrapper">
             <div class="usa-form-group">
                 <label class="usa-label" for="hack-exp-textarea">If yes, please list the names and years of the hackathons you've attended.</label>
                 <textarea
-                class="usa-textarea margin-top-2"
+                class="usa-textarea hack-exp-input margin-top-2"
                 id="hack-exp-textarea"
                 name="hack-exp-textarea"
                 maxlength="100"
@@ -1096,6 +1117,9 @@
                                 <span class="usa-step-indicator__segment-label">
                                     Personal Info.
                                 </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Start
+                                </span>
                             </li>
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
                                 <span class="usa-step-indicator__segment-label">
@@ -1115,6 +1139,9 @@
                             <li class="usa-step-indicator__segment">
                                 <span class="usa-step-indicator__segment-label">
                                 Confirmation
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Finish
                                 </span>
                             </li>
                         </ol>
@@ -1189,36 +1216,6 @@
 
     <div class="grid-row padding-top-8">
         <div class="grid-col-12">
-            <!-- <fieldset class="usa-fieldset">
-                <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
-                <div class="usa-radio">
-                    <input
-                        class="usa-radio__input"
-                        id="hackathon-no"
-                        type="radio"
-                        name="hack-options"
-                        value="No"
-                        data-parsley-group="block-3"
-                        data-parsley-errors-container="#event-required-msg"
-                    />
-                    <label class="usa-radio__label" for="hackathon-no">No</label>
-                </div>
-                <div class="usa-radio">
-                    <input
-                        class="usa-radio__input"
-                        id="hackathon-yes"
-                        type="radio"
-                        name="hack-options"
-                        value="Yes"
-                        data-parsley-required 
-                        data-parsley-group="block-3"
-                        data-parsley-errors-container="#event-required-msg"
-                    />
-                    <label class="usa-radio__label" for="hackathon-yes">Yes</label>
-                </div>
-                <div id="event-required-msg"></div>
-            </fieldset> -->
-
             <fieldset class="usa-fieldset">
                 <legend class="usa-legend usa-legend">Can you make the entire event? <span>*</span></legend>
                 <div class="usa-radio">
@@ -1311,6 +1308,9 @@
                                 <span class="usa-step-indicator__segment-label">
                                     Personal Info.
                                 </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Start
+                                </span>
                             </li>
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--complete">
                                 <span class="usa-step-indicator__segment-label">
@@ -1330,6 +1330,9 @@
                             <li class="usa-step-indicator__segment usa-step-indicator__segment--current" aria-current="true">
                                 <span class="usa-step-indicator__segment-label">
                                 Confirmation
+                                </span>
+                                <span class="mobile-indicator padding-top-2">
+                                    Finish
                                 </span>
                             </li>
                         </ol>

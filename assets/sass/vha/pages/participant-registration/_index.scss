@@ -281,4 +281,16 @@ section.form-fields {
     .multiselect-dropdown span.optext {
         padding: 1px 10% 1px 0 !important;
     }
+
+    @media (max-width: 639px){
+        .mobile-indicator {
+            display: block;
+        }
+    }
+
+    @media (min-width: 640px){
+        .mobile-indicator {
+            display: none;
+        }
+    }
 }
