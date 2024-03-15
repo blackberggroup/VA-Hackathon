@@ -83,7 +83,7 @@ if ($('#wave-hero-1').length > 0){
 		var waveContact = $('#wave-contact').wavify({
 			height: 60,
 			bones: 4,
-			amplitude: 70,
+			amplitude: 58,
 			color: '#ffffff',
 			speed: .30
 		});		
