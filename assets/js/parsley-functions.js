@@ -71,6 +71,22 @@ $("input[type='radio'][name=hackathon-options]").change(function() {
   }
 });
 
+$(".multiselect-dropdown-list-wrapper input").change(function() {     
+  if (this.value == 'Yes') {
+      $("textarea[name=hack-exp-textarea]").attr('data-parsley-required', true);
+      $(requiredHackExp).appendTo("label[for='hack-exp-textarea']");
+  } else { 
+      $("textarea[name=hack-exp-textarea]").removeAttr('data-parsley-required', false);
+      $(".dynamicHackExp").remove();
+      $(".hack-exp-input").removeClass("parsley-error");
+      $(".hack-exp-wrapper .parsley-errors-list").remove();
+      $("textarea[name=hack-exp-textarea]").val('');
+  }
+});
+
+
+
+
 
 // Display user inputs in results table
 function displayResults() {
