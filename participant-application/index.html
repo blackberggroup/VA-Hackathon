@@ -74,7 +74,8 @@
             <section id="form-fields" class="form-fields">
                 <div class="grid-container">
 
-                    <form class="usa-form form-registration" action="../thank-you/" data-parsley-validate>
+                    <form class="usa-form form-registration" action="https://vha-ie.bgsandbox.com/formtools/process.php" method="post" data-parsley-validate>
+                    <input type="hidden" name="form_tools_form_id" value="7" />
  
                         {% include "form-registration/form-section1.html" %} 
 
