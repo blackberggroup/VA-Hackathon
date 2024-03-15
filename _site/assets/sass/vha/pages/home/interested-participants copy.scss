@@ -1,0 +1,31 @@
+@use "uswds-core" as *;
+
+.interested-participants {
+
+    &__wrapper {
+        color: #ffffff;
+        background: radial-gradient(117.5% 117.5% at 50% -17.5%, #003EA8 0%, #000814 100%);
+        box-shadow: 0px 16px 32px rgba(1, 44, 118, 0.15);
+        border-radius: 8px;
+        position: relative;
+
+        .grid-row {
+            position: relative;
+            z-index: 10;
+        }
+        
+    }
+
+    .decore.arrows {
+        z-index: 10;
+        bottom: 3%;
+        left: 3%;
+
+        @include at-media("tablet-lg") {
+            top: 8%;
+            left: 2%;
+        }
+
+    }
+
+}
