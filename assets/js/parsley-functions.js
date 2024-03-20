@@ -220,12 +220,16 @@ function displayResults() {
     var viewsGain = $("#views-textarea").val();
     var hackOptions = $("input[type='radio'][name=hacka-options]:checked").val();
     var checkAcknowledge = $("#check-acknowledge").val();
+    var checkAcknowledge1 = $("#check-acknowledge1").val();
+    var checkAcknowledge2 = $("#check-acknowledge2").val();
     
     $("td#results_healthcare-textarea").html(healthcare);
     $("td#results_exp-gain-textarea").html(expGain);
     $("td#results_views-textarea").html(viewsGain);
     $("td#results_hack-options").html(hackOptions);
     $("td#results_check-acknowledge").html(checkAcknowledge);
+    $("td#results_check-acknowledge1").html(checkAcknowledge1);
+    $("td#results_check-acknowledge2").html(checkAcknowledge2);
   }
 } 
 
